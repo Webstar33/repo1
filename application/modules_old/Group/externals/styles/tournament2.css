@@ -1,0 +1,5921 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+body.with-legal-banner {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#mss-legal-banner {
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    border-top: 8px solid #0B5699;
+    color: #FFF;
+    text-align: center;
+    font: bold 16px 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 50px;
+    bottom: 0;
+}
+
+#mss-legal-banner.top {
+    top: 0;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 8px solid #FFF;
+}
+
+#mss-legal-banner span {
+    margin-right: 20px;
+}
+
+#mss-legal-banner span.close {
+    display: none;
+}
+
+#mss-legal-dismiss {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    background-color: #FFF;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#mss-legal-dismiss:hover {
+    background-color: #0B5699;
+    color: #FFF;
+}
+
+@media only screen and (max-width:550px) {
+    #mss-legal-banner {
+        line-height: normal;
+        font-size: 12px;
+    }
+    #mss-legal-banner span {
+        display: inline-block;
+        margin: 10px;
+    }
+    #mss-legal-dismiss {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+
+.ui-helper-hidden {
+    display: none;
+}
+
+.ui-helper-hidden-accessible {
+    position: absolute!important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+
+.ui-helper-clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.ui-helper-clearfix {
+    display: inline-block;
+}
+
+* html .ui-helper-clearfix {
+    height: 1%;
+}
+
+.ui-helper-clearfix {
+    display: block;
+}
+
+.ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
+}
+
+.ui-state-disabled {
+    cursor: default!important;
+}
+
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.ui-widget-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ui-helper-hidden {
+    display: none;
+}
+
+.ui-helper-hidden-accessible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.ui-helper-clearfix:after {
+    clear: both;
+}
+
+.ui-helper-clearfix {
+    zoom: 1;
+}
+
+.ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
+}
+
+.ui-state-disabled {
+    cursor: default !important;
+}
+
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.ui-widget-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ui-widget {
+    font-family: 'Open Sans', 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.ui-widget .ui-widget {
+    font-size: 1em;
+}
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-family: 'Open Sans', 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+.ui-widget-content {
+    border: none;
+    background: #FFF;
+    color: #333333;
+}
+
+.ui-widget-content a {
+    color: #333333;
+}
+
+.ui-widget-header {
+    border: none;
+    background: #666;
+    background-image: linear-gradient(bottom, #333333 0%, #666666 100%);
+    background-image: -o-linear-gradient(bottom, #333333 0%, #666666 100%);
+    background-image: -moz-linear-gradient(bottom, #333333 0%, #666666 100%);
+    background-image: -webkit-linear-gradient(bottom, #333333 0%, #666666 100%);
+    background-image: -ms-linear-gradient(bottom, #333333 0%, #666666 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #333333), color-stop(1, #666666));
+    color: #fff;
+    font: bold 13px/25px 'Open Sans', 'Lucida Sans', 'Lucida Grande', verdana sans-serif;
+    vertical-align: middle;
+    padding: 0 14px 0 24px;
+    min-height: 25px;
+}
+
+.ui-widget-header a {
+    color: #ffffff;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: none;
+    background: #cccccc;
+    font-weight: normal;
+    color: #333333;
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: 1px solid #999999;
+    background: #ffffff;
+    font-weight: normal;
+    color: #333333;
+}
+
+.ui-state-hover a,
+.ui-state-hover a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    border: 1px solid #aaaaaa;
+    background: #ffffff;
+    font-weight: normal;
+    color: #333333;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+.ui-widget:active {
+    outline: none;
+}
+
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+    color: #363636;
+}
+
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+    color: #cd0a0a;
+}
+
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+    color: #cd0a0a;
+}
+
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+    font-weight: bold;
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+    opacity: .7;
+    filter: Alpha(Opacity=70);
+    font-weight: normal;
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+    background-image: none;
+}
+
+.ui-icon-carat-1-n {
+    background-position: 0 0;
+}
+
+.ui-icon-carat-1-ne {
+    background-position: -16px 0;
+}
+
+.ui-icon-carat-1-e {
+    background-position: -32px 0;
+}
+
+.ui-icon-carat-1-se {
+    background-position: -48px 0;
+}
+
+.ui-icon-carat-1-s {
+    background-position: -64px 0;
+}
+
+.ui-icon-carat-1-sw {
+    background-position: -80px 0;
+}
+
+.ui-icon-carat-1-w {
+    background-position: -96px 0;
+}
+
+.ui-icon-carat-1-nw {
+    background-position: -112px 0;
+}
+
+.ui-icon-carat-2-n-s {
+    background-position: -128px 0;
+}
+
+.ui-icon-carat-2-e-w {
+    background-position: -144px 0;
+}
+
+.ui-icon-triangle-1-n {
+    background-position: 0 -16px;
+}
+
+.ui-icon-triangle-1-ne {
+    background-position: -16px -16px;
+}
+
+.ui-icon-triangle-1-e {
+    background-position: -32px -16px;
+}
+
+.ui-icon-triangle-1-se {
+    background-position: -48px -16px;
+}
+
+.ui-icon-triangle-1-s {
+    background-position: -64px -16px;
+}
+
+.ui-icon-triangle-1-sw {
+    background-position: -80px -16px;
+}
+
+.ui-icon-triangle-1-w {
+    background-position: -96px -16px;
+}
+
+.ui-icon-triangle-1-nw {
+    background-position: -112px -16px;
+}
+
+.ui-icon-triangle-2-n-s {
+    background-position: -128px -16px;
+}
+
+.ui-icon-triangle-2-e-w {
+    background-position: -144px -16px;
+}
+
+.ui-icon-arrow-1-n {
+    background-position: 0 -32px;
+}
+
+.ui-icon-arrow-1-ne {
+    background-position: -16px -32px;
+}
+
+.ui-icon-arrow-1-e {
+    background-position: -32px -32px;
+}
+
+.ui-icon-arrow-1-se {
+    background-position: -48px -32px;
+}
+
+.ui-icon-arrow-1-s {
+    background-position: -64px -32px;
+}
+
+.ui-icon-arrow-1-sw {
+    background-position: -80px -32px;
+}
+
+.ui-icon-arrow-1-w {
+    background-position: -96px -32px;
+}
+
+.ui-icon-arrow-1-nw {
+    background-position: -112px -32px;
+}
+
+.ui-icon-arrow-2-n-s {
+    background-position: -128px -32px;
+}
+
+.ui-icon-arrow-2-ne-sw {
+    background-position: -144px -32px;
+}
+
+.ui-icon-arrow-2-e-w {
+    background-position: -160px -32px;
+}
+
+.ui-icon-arrow-2-se-nw {
+    background-position: -176px -32px;
+}
+
+.ui-icon-arrowstop-1-n {
+    background-position: -192px -32px;
+}
+
+.ui-icon-arrowstop-1-e {
+    background-position: -208px -32px;
+}
+
+.ui-icon-arrowstop-1-s {
+    background-position: -224px -32px;
+}
+
+.ui-icon-arrowstop-1-w {
+    background-position: -240px -32px;
+}
+
+.ui-icon-arrowthick-1-n {
+    background-position: 0 -48px;
+}
+
+.ui-icon-arrowthick-1-ne {
+    background-position: -16px -48px;
+}
+
+.ui-icon-arrowthick-1-e {
+    background-position: -32px -48px;
+}
+
+.ui-icon-arrowthick-1-se {
+    background-position: -48px -48px;
+}
+
+.ui-icon-arrowthick-1-s {
+    background-position: -64px -48px;
+}
+
+.ui-icon-arrowthick-1-sw {
+    background-position: -80px -48px;
+}
+
+.ui-icon-arrowthick-1-w {
+    background-position: -96px -48px;
+}
+
+.ui-icon-arrowthick-1-nw {
+    background-position: -112px -48px;
+}
+
+.ui-icon-arrowthick-2-n-s {
+    background-position: -128px -48px;
+}
+
+.ui-icon-arrowthick-2-ne-sw {
+    background-position: -144px -48px;
+}
+
+.ui-icon-arrowthick-2-e-w {
+    background-position: -160px -48px;
+}
+
+.ui-icon-arrowthick-2-se-nw {
+    background-position: -176px -48px;
+}
+
+.ui-icon-arrowthickstop-1-n {
+    background-position: -192px -48px;
+}
+
+.ui-icon-arrowthickstop-1-e {
+    background-position: -208px -48px;
+}
+
+.ui-icon-arrowthickstop-1-s {
+    background-position: -224px -48px;
+}
+
+.ui-icon-arrowthickstop-1-w {
+    background-position: -240px -48px;
+}
+
+.ui-icon-arrowreturnthick-1-w {
+    background-position: 0 -64px;
+}
+
+.ui-icon-arrowreturnthick-1-n {
+    background-position: -16px -64px;
+}
+
+.ui-icon-arrowreturnthick-1-e {
+    background-position: -32px -64px;
+}
+
+.ui-icon-arrowreturnthick-1-s {
+    background-position: -48px -64px;
+}
+
+.ui-icon-arrowreturn-1-w {
+    background-position: -64px -64px;
+}
+
+.ui-icon-arrowreturn-1-n {
+    background-position: -80px -64px;
+}
+
+.ui-icon-arrowreturn-1-e {
+    background-position: -96px -64px;
+}
+
+.ui-icon-arrowreturn-1-s {
+    background-position: -112px -64px;
+}
+
+.ui-icon-arrowrefresh-1-w {
+    background-position: -128px -64px;
+}
+
+.ui-icon-arrowrefresh-1-n {
+    background-position: -144px -64px;
+}
+
+.ui-icon-arrowrefresh-1-e {
+    background-position: -160px -64px;
+}
+
+.ui-icon-arrowrefresh-1-s {
+    background-position: -176px -64px;
+}
+
+.ui-icon-arrow-4 {
+    background-position: 0 -80px;
+}
+
+.ui-icon-arrow-4-diag {
+    background-position: -16px -80px;
+}
+
+.ui-icon-extlink {
+    background-position: -32px -80px;
+}
+
+.ui-icon-newwin {
+    background-position: -48px -80px;
+}
+
+.ui-icon-refresh {
+    background-position: -64px -80px;
+}
+
+.ui-icon-shuffle {
+    background-position: -80px -80px;
+}
+
+.ui-icon-transfer-e-w {
+    background-position: -96px -80px;
+}
+
+.ui-icon-transferthick-e-w {
+    background-position: -112px -80px;
+}
+
+.ui-icon-folder-collapsed {
+    background-position: 0 -96px;
+}
+
+.ui-icon-folder-open {
+    background-position: -16px -96px;
+}
+
+.ui-icon-document {
+    background-position: -32px -96px;
+}
+
+.ui-icon-document-b {
+    background-position: -48px -96px;
+}
+
+.ui-icon-note {
+    background-position: -64px -96px;
+}
+
+.ui-icon-mail-closed {
+    background-position: -80px -96px;
+}
+
+.ui-icon-mail-open {
+    background-position: -96px -96px;
+}
+
+.ui-icon-suitcase {
+    background-position: -112px -96px;
+}
+
+.ui-icon-comment {
+    background-position: -128px -96px;
+}
+
+.ui-icon-person {
+    background-position: -144px -96px;
+}
+
+.ui-icon-print {
+    background-position: -160px -96px;
+}
+
+.ui-icon-trash {
+    background-position: -176px -96px;
+}
+
+.ui-icon-locked {
+    background-position: -192px -96px;
+}
+
+.ui-icon-unlocked {
+    background-position: -208px -96px;
+}
+
+.ui-icon-bookmark {
+    background-position: -224px -96px;
+}
+
+.ui-icon-tag {
+    background-position: -240px -96px;
+}
+
+.ui-icon-home {
+    background-position: 0 -112px;
+}
+
+.ui-icon-flag {
+    background-position: -16px -112px;
+}
+
+.ui-icon-calendar {
+    background-position: -32px -112px;
+}
+
+.ui-icon-cart {
+    background-position: -48px -112px;
+}
+
+.ui-icon-pencil {
+    background-position: -64px -112px;
+}
+
+.ui-icon-clock {
+    background-position: -80px -112px;
+}
+
+.ui-icon-disk {
+    background-position: -96px -112px;
+}
+
+.ui-icon-calculator {
+    background-position: -112px -112px;
+}
+
+.ui-icon-zoomin {
+    background-position: -128px -112px;
+}
+
+.ui-icon-zoomout {
+    background-position: -144px -112px;
+}
+
+.ui-icon-search {
+    background-position: -160px -112px;
+}
+
+.ui-icon-wrench {
+    background-position: -176px -112px;
+}
+
+.ui-icon-gear {
+    background-position: -192px -112px;
+}
+
+.ui-icon-heart {
+    background-position: -208px -112px;
+}
+
+.ui-icon-star {
+    background-position: -224px -112px;
+}
+
+.ui-icon-link {
+    background-position: -240px -112px;
+}
+
+.ui-icon-cancel {
+    background-position: 0 -128px;
+}
+
+.ui-icon-plus {
+    background-position: -16px -128px;
+}
+
+.ui-icon-plusthick {
+    background-position: -32px -128px;
+}
+
+.ui-icon-minus {
+    background-position: -48px -128px;
+}
+
+.ui-icon-minusthick {
+    background-position: -64px -128px;
+}
+
+.ui-icon-close {
+    background-position: -80px -128px;
+}
+
+.ui-icon-closethick {
+    background-position: -96px -128px;
+}
+
+.ui-icon-key {
+    background-position: -112px -128px;
+}
+
+.ui-icon-lightbulb {
+    background-position: -128px -128px;
+}
+
+.ui-icon-scissors {
+    background-position: -144px -128px;
+}
+
+.ui-icon-clipboard {
+    background-position: -160px -128px;
+}
+
+.ui-icon-copy {
+    background-position: -176px -128px;
+}
+
+.ui-icon-contact {
+    background-position: -192px -128px;
+}
+
+.ui-icon-image {
+    background-position: -208px -128px;
+}
+
+.ui-icon-video {
+    background-position: -224px -128px;
+}
+
+.ui-icon-script {
+    background-position: -240px -128px;
+}
+
+.ui-icon-alert {
+    background-position: 0 -144px;
+}
+
+.ui-icon-info {
+    background-position: -16px -144px;
+}
+
+.ui-icon-notice {
+    background-position: -32px -144px;
+}
+
+.ui-icon-help {
+    background-position: -48px -144px;
+}
+
+.ui-icon-check {
+    background-position: -64px -144px;
+}
+
+.ui-icon-bullet {
+    background-position: -80px -144px;
+}
+
+.ui-icon-radio-off {
+    background-position: -96px -144px;
+}
+
+.ui-icon-radio-on {
+    background-position: -112px -144px;
+}
+
+.ui-icon-pin-w {
+    background-position: -128px -144px;
+}
+
+.ui-icon-pin-s {
+    background-position: -144px -144px;
+}
+
+.ui-icon-play {
+    background-position: 0 -160px;
+}
+
+.ui-icon-pause {
+    background-position: -16px -160px;
+}
+
+.ui-icon-seek-next {
+    background-position: -32px -160px;
+}
+
+.ui-icon-seek-prev {
+    background-position: -48px -160px;
+}
+
+.ui-icon-seek-end {
+    background-position: -64px -160px;
+}
+
+.ui-icon-seek-start {
+    background-position: -80px -160px;
+}
+
+.ui-icon-seek-first {
+    background-position: -80px -160px;
+}
+
+.ui-icon-stop {
+    background-position: -96px -160px;
+}
+
+.ui-icon-eject {
+    background-position: -112px -160px;
+}
+
+.ui-icon-volume-off {
+    background-position: -128px -160px;
+}
+
+.ui-icon-volume-on {
+    background-position: -144px -160px;
+}
+
+.ui-icon-power {
+    background-position: 0 -176px;
+}
+
+.ui-icon-signal-diag {
+    background-position: -16px -176px;
+}
+
+.ui-icon-signal {
+    background-position: -32px -176px;
+}
+
+.ui-icon-battery-0 {
+    background-position: -48px -176px;
+}
+
+.ui-icon-battery-1 {
+    background-position: -64px -176px;
+}
+
+.ui-icon-battery-2 {
+    background-position: -80px -176px;
+}
+
+.ui-icon-battery-3 {
+    background-position: -96px -176px;
+}
+
+.ui-icon-circle-plus {
+    background-position: 0 -192px;
+}
+
+.ui-icon-circle-minus {
+    background-position: -16px -192px;
+}
+
+.ui-icon-circle-close {
+    background-position: -32px -192px;
+}
+
+.ui-icon-circle-triangle-e {
+    background-position: -48px -192px;
+}
+
+.ui-icon-circle-triangle-s {
+    background-position: -64px -192px;
+}
+
+.ui-icon-circle-triangle-w {
+    background-position: -80px -192px;
+}
+
+.ui-icon-circle-triangle-n {
+    background-position: -96px -192px;
+}
+
+.ui-icon-circle-arrow-e {
+    background-position: -112px -192px;
+}
+
+.ui-icon-circle-arrow-s {
+    background-position: -128px -192px;
+}
+
+.ui-icon-circle-arrow-w {
+    background-position: -144px -192px;
+}
+
+.ui-icon-circle-arrow-n {
+    background-position: -160px -192px;
+}
+
+.ui-icon-circle-zoomin {
+    background-position: -176px -192px;
+}
+
+.ui-icon-circle-zoomout {
+    background-position: -192px -192px;
+}
+
+.ui-icon-circle-check {
+    background-position: -208px -192px;
+}
+
+.ui-icon-circlesmall-plus {
+    background-position: 0 -208px;
+}
+
+.ui-icon-circlesmall-minus {
+    background-position: -16px -208px;
+}
+
+.ui-icon-circlesmall-close {
+    background-position: -32px -208px;
+}
+
+.ui-icon-squaresmall-plus {
+    background-position: -48px -208px;
+}
+
+.ui-icon-squaresmall-minus {
+    background-position: -64px -208px;
+}
+
+.ui-icon-squaresmall-close {
+    background-position: -80px -208px;
+}
+
+.ui-icon-grip-dotted-vertical {
+    background-position: 0 -224px;
+}
+
+.ui-icon-grip-dotted-horizontal {
+    background-position: -16px -224px;
+}
+
+.ui-icon-grip-solid-vertical {
+    background-position: -32px -224px;
+}
+
+.ui-icon-grip-solid-horizontal {
+    background-position: -48px -224px;
+}
+
+.ui-icon-gripsmall-diagonal-se {
+    background-position: -64px -224px;
+}
+
+.ui-icon-grip-diagonal-se {
+    background-position: -80px -224px;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -khtml-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -khtml-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -khtml-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -khtml-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#media-browser-page-wrapper .ui-corner-all,
+.media-wrapper,
+.media-wrapper .ui-corner-all,
+.media-wrapper .ui-corner-top,
+.media-wrapper .ui-corner-left,
+.media-wrapper .ui-corner-tl {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    -khtml-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#media-browser-page-wrapper .ui-corner-all,
+.media-wrapper,
+.media-wrapper .ui-corner-all,
+.media-wrapper .ui-corner-top,
+.media-wrapper .ui-corner-right,
+.media-wrapper .ui-corner-tl {
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    -khtml-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#media-browser-tab.ui-corner-all,
+#media-browser-tab.ui-corner-top,
+#media-browser-tab.ui-corner-left,
+#media-browser-tab.ui-corner-tl {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -khtml-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#media-browser-tab.ui-corner-all,
+#media-browser-tab.ui-corner-top,
+#media-browser-tab.ui-corner-right,
+#media-browser-tab.ui-corner-tr {
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -khtml-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+-moz-border-radius:8px;
+-khtml-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:8px;
+
+}
+.ui-resizable {
+    position: relative;
+}
+.ui-resizable-handle {
+    position: absolute;
+    font-size: 0.1px;
+    z-index: 99999;
+    display: block;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+    display: none;
+}
+.ui-resizable-n {
+    cursor: n-resize;
+    height: 7px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+}
+.ui-resizable-s {
+    cursor: s-resize;
+    height: 7px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+}
+.ui-resizable-e {
+    cursor: e-resize;
+    width: 7px;
+    right: -5px;
+    top: 0;
+    height: 100%;
+}
+.ui-resizable-w {
+    cursor: w-resize;
+    width: 7px;
+    left: -5px;
+    top: 0;
+    height: 100%;
+}
+.ui-resizable-se {
+    cursor: se-resize;
+    width: 12px;
+    height: 12px;
+    right: 1px;
+    bottom: 1px;
+}
+.ui-resizable-sw {
+    cursor: sw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    bottom: -5px;
+}
+.ui-resizable-nw {
+    cursor: nw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    top: -5px;
+}
+.ui-resizable-ne {
+    cursor: ne-resize;
+    width: 9px;
+    height: 9px;
+    right: -5px;
+    top: -5px;
+}
+.ui-selectable-helper {
+    position: absolute;
+    z-index: 100;
+    border: 1px dotted black;
+}
+.ui-dialog {
+    position: absolute;
+    padding: 0;
+    border: 0;
+    width: 300px;
+    overflow: hidden;
+}
+.ui-dialog .ui-dialog-titlebar {
+    position: relative;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+}
+.ui-dialog .ui-dialog-title {
+    float: left;
+    margin: 0;
+}
+.ui-dialog a.ui-dialog-titlebar-close {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    background: none;
+    border: none;
+}
+.ui-dialog a.ui-dialog-titlebar-close:hover,
+.ui-dialog a.ui-dialog-titlebar-close:focus,
+.ui-dialog a.ui-dialog-titlebar-close:active {
+    background: none;
+    border: none;
+}
+.ui-dialog .ui-dialog-titlebar-close span {
+    display: block;
+    margin: 0;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover,
+.ui-dialog .ui-dialog-titlebar-close:focus {
+    padding: 0;
+}
+.ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: 0;
+    background: none;
+    overflow: auto;
+    zoom: 1;
+}
+.ui-dialog .ui-dialog-buttonpane {
+    text-align: left;
+    border-width: 1px 0 0 0;
+    background-image: none;
+    margin: .5em 0 0 0;
+    padding: .3em 1em .5em .4em;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: right;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: .5em .4em .5em 0;
+    cursor: pointer;
+}
+.ui-dialog .ui-resizable-se {
+    width: 14px;
+    height: 14px;
+    right: 3px;
+    bottom: 3px;
+}
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+.ui-tabs {
+    position: relative;
+    padding: 0;
+    zoom: 1;
+}
+.ui-tabs .ui-tabs-nav {
+    margin: 0;
+    padding: 5px 5px 0;
+    border: none !important;
+}
+.ui-tabs .ui-tabs-nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 1px;
+    margin: 0 .2em 1px 0;
+    border-bottom: 0 !important;
+    padding: 0 0 1px;
+    white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav li.ui-state-default {
+    background: #CCC;
+    background-image: linear-gradient(bottom, #ABABAB 0%, #CCCCCC 13%);
+    background-image: -o-linear-gradient(bottom, #ABABAB 0%, #CCCCCC 13%);
+    background-image: -moz-linear-gradient(bottom, #ABABAB 0%, #CCCCCC 13%);
+    background-image: -webkit-linear-gradient(bottom, #ABABAB 0%, #CCCCCC 13%);
+    background-image: -ms-linear-gradient(bottom, #ABABAB 0%, #CCCCCC 13%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ABABAB), color-stop(0.13, #CCCCCC));
+}
+.ui-tabs .ui-tabs-nav li.ui-state-active,
+.ui-tabs .ui-tabs-nav li.ui-state-hover,
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    background: #FFF;
+    background-image: none;
+}
+.ui-tabs .ui-tabs-nav li a {
+    float: left;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-state-hover,
+.ui-tabs .ui-tabs-nav li.ui-state-active,
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    border: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    margin-bottom: 0;
+    padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-state-processing a {
+    cursor: text;
+}
+.ui-tabs .ui-tabs-nav li a,
+.ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+    cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 0;
+    padding: 1em 1.4em;
+    background: none;
+}
+.ui-tabs .ui-tabs-hide {
+    display: none !important;
+}
+.ui-autocomplete {
+    position: absolute;
+    cursor: default;
+}
+* html .ui-autocomplete {
+    width: 1px;
+}
+.ui-menu {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    display: block;
+    float: left;
+}
+.ui-menu .ui-menu {
+    margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.ui-menu .ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: .2em .4em;
+    line-height: 1.5;
+    zoom: 1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    font-weight: normal;
+    margin: -1px;
+}
+.ui-helper-hidden {
+    display: none;
+}
+.ui-helper-hidden-accessible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+.ui-helper-clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.ui-helper-clearfix {
+    display: inline-block;
+}
+* html .ui-helper-clearfix {
+    height: 1%;
+}
+.ui-helper-clearfix {
+    display: block;
+}
+.ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
+}
+.ui-state-disabled {
+    cursor: default !important;
+}
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.ui-widget-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 1em;
+}
+.ui-widget-content {
+    border: 1px solid #dddddd;
+    background: #eeeeee url(/sites/all/modules/custom/ncaa_libraries/ncaa_school_autocomplete/images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
+    color: #333333;
+}
+.ui-widget-content#video-modal {
+    background: inherit;
+}
+.ui-widget-content a {
+    color: #333333;
+}
+.ui-widget-header {
+    background: #f6a828 url(/sites/all/modules/custom/ncaa_libraries/ncaa_school_autocomplete/images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
+    color: #ffffff;
+    font-weight: bold;
+}
+.ui-widget-header a {
+    color: #ffffff;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 1px solid #cccccc;
+    background: #f6f6f6 url(/sites/all/modules/custom/ncaa_libraries/ncaa_school_autocomplete/images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #1c94c4;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+    color: #1c94c4;
+    text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: 1px solid #afaeae;
+    background: #f6f6f6 url(/sites/all/modules/custom/ncaa_libraries/ncaa_school_autocomplete/images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover {
+    color: #c77405;
+    text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    border: 1px solid #fbd850;
+    background: #ffffff url(/sites/all/modules/custom/ncaa_libraries/ncaa_school_autocomplete/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #eb8f00;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    text-decoration: none;
+}
+.ui-widget:active {
+    outline: none;
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #fed22f;
+    background: #ffe45c url(/sites/all/modules/custom/ncaa_libraries/ncaa_school_autocomplete/images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;
+    color: #363636;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+    color: #363636;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+    border: 1px solid #cd0a0a;
+    background: #b81900 url(/sites/all/modules/custom/ncaa_libraries/ncaa_school_autocomplete/images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat;
+    color: #ffffff;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+    color: #ffffff;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+    color: #ffffff;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+    font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+    opacity: .7;
+    filter: Alpha(Opacity=70);
+    font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+    background-image: none;
+}
+.ui-corner-tl {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.ui-corner-tr {
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.ui-corner-bl {
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.ui-corner-br {
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-top {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.ui-corner-bottom {
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-right {
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-left {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.ui-widget-shadow {
+    margin: -5px 0 0 -5px;
+    padding: 5px;
+    background: #000000 url(/sites/all/modules/custom/ncaa_libraries/ncaa_school_autocomplete/images/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x;
+    opacity: .20;
+    filter: Alpha(Opacity=20);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.ui-autocomplete {
+    position: absolute;
+    cursor: default;
+}
+* html .ui-autocomplete {
+    width: 1px;
+}
+.ui-menu {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    display: block;
+    float: left;
+}
+.ui-menu .ui-menu {
+    margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.ui-menu .ui-menu-item a {
+    display: block;
+    font-size: 11px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px 0 5px;
+    text-indent: 26px;
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+}
+.ui-menu .ui-menu-item a span.logo {
+    position: absolute;
+    background-position: center center;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    margin: 0 4px;
+    background-repeat: no-repeat;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    font-weight: normal;
+    margin: -1px;
+}
+#nav-favorites-workflow {
+    color: #000;
+    font: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#nav-favorites-workflow .gigya-screen h3 {
+    margin: 5px 0;
+    color: #00375B;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: bold;
+}
+#nav-favorites-workflow .gigya-social-login {
+    min-height: 60px;
+}
+#nav-favorites-workflow input[type="text"],
+#nav-favorites-workflow input[type="password"],
+#nav-favorites-workflow input[type="email"] {
+    border-radius: 2px;
+    width: 250px;
+    margin: 0 auto 15px;
+}
+#nav-favorites-workflow input[type="button"],
+#nav-favorites-workflow input[type="submit"] {
+    margin: 0 auto;
+    display: block;
+}
+#nav-favorites-workflow .favorites-marketing-text {
+    font-size: 12px;
+    color: #444;
+    width: 280px;
+    margin: 0 auto;
+}
+#nav-favorites-workflow .favorites-marketing-text input {
+    margin-right: 5px;
+}
+#ncaa-registration-screen hr,
+#ncaa-login-account-login hr,
+#ncaa-login-screen hr {
+    margin: 10px 0;
+}
+.ps-container {
+    min-width: 25px;
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    *display: inline
+}
+.ps-container .ps-drop {
+    background: #fff;
+    border: 1px solid #aaa;
+    border-top: 0;
+    position: absolute;
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+    z-index: 1010;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    box-sizing: border-box
+}
+.ps-drop {
+    left: 0;
+    top: 99%
+}
+.ps-container .ps-inner {
+    background-color: #fff;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, #fff), color-stop(50%, #f6f6f6), color-stop(52%, #eee), color-stop(100%, #f4f4f4));
+    background-image: -webkit-linear-gradient(top, #fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+    background-image: -moz-linear-gradient(top, #fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+    background-image: -o-linear-gradient(top, #fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+    background-image: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #aaa;
+    -webkit-box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0, 0, 0, .1);
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 23px;
+    line-height: 24px;
+    padding: 0 0 0 8px;
+    color: #444;
+    text-decoration: none
+}
+.ps-container .ps-inner span {
+    margin-right: 26px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+.ps-container .ps-inner div {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 18px;
+    border-left: 1px solid #AAA
+}
+.ps-container .ps-drop {
+    margin-top: 0;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+.ps-container .ps-results {
+    margin: 0 4px 4px 0;
+    max-height: 240px;
+    padding: 0 0 0 4px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch
+}
+.ps-container .ps-results li {
+    display: none;
+    width: 100%;
+    clear: both;
+    line-height: 15px;
+    list-style: none;
+    padding: 5px 6px;
+    margin: 0
+}
+.ps-container .ps-results li:hover {
+    background-color: #EEE
+}
+.ps-container .ps-results .active-result {
+    cursor: pointer;
+    display: list-item
+}
+.ps-container-active .ps-inner {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    border: 1px solid #5897fb
+}
+.ps-container-active .ps-inner {
+    border: 1px solid #aaa;
+    -webkit-box-shadow: 0 1px 0 #fff inset;
+    -moz-box-shadow: 0 1px 0 #fff inset;
+    box-shadow: 0 1px 0 #fff inset;
+    background-color: #eee;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, #eee), color-stop(80%, #fff));
+    background-image: -webkit-linear-gradient(top, #eee 20%, #fff 80%);
+    background-image: -moz-linear-gradient(top, #eee 20%, #fff 80%);
+    background-image: -o-linear-gradient(top, #eee 20%, #fff 80%);
+    background-image: linear-gradient(#eee 20%, #fff 80%);
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+.ps-container-active .ps-inner div {
+    background: transparent;
+    border-left: 0
+}
+.ps-container-active .ps-inner div b {
+    background-position: -18px 2px
+}
+.ps-disabled {
+    cursor: default;
+    opacity: .5!important
+}
+.ps-disabled .ps-inner {
+    cursor: default
+}
+.ps-disabled .ps-choices .search-choice .search-choice-close {
+    cursor: default
+}
+.ps-container.ncaa a.ps-inner {
+    border-radius: 0;
+    border: solid 1px #FFF;
+    background-color: #fff;
+    *zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFDDDDDD');
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    background-image: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    background-image: -o-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    background-image: linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    -webkit-box-shadow: 1px 1px 6px rgba(1, 2, 2, 0.3);
+    -moz-box-shadow: 1px 1px 6px rgba(1, 2, 2, 0.3);
+    box-shadow: 1px 1px 6px rgba(1, 2, 2, 0.3);
+    cursor: pointer;
+}
+.ps-container.ncaa a.ps-inner span {
+    color: #0062ae;
+    font: bold 14px/25px "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+}
+.ps-container.ncaa a.ps-inner div {
+    border-left: 1px solid #FFF;
+    width: 25px;
+}
+.ps-container.ncaa a.ps-inner div b {
+    width: 100%;
+    height: 100%;
+    background: url("/dr/ncaa/ncaa7/release/sites/all/modules/custom/ncaa_libraries/prettyselect/ncaa/ncaa-ps-sprites.png") no-repeat 8px 8px;
+}
+.ps-container.ncaa.single a.ps-inner {
+    cursor: inherit;
+}
+.ps-container.ncaa .ps-drop {
+    margin-top: -1px;
+    border: solid 1px #FFF;
+    background-color: #dddddd;
+    *zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFDDDDDD', endColorstr='#FFFFFFFF');
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+    background-image: -o-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+    background-image: linear-gradient(top, #dddddd 0%, #ffffff 100%);
+}
+.ps-container.ncaa .ps-drop .ps-results {
+    margin: 0 4px 4px 0;
+}
+.ps-container.ncaa .ps-drop .ps-results li {
+    color: #0062ae;
+    font: normal 13px "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    cursor: default;
+}
+.ps-container.ncaa .ps-drop .ps-results li:hover {
+    background-color: #0062ae;
+    color: #FFF;
+}
+.ps-container.ncaa .ps-drop .ps-results li.active-result {
+    cursor: pointer;
+}
+.favorites-container .favorites-nav-add-container form {
+    margin: 0;
+}
+.favorites-container .favorites-nav-add-container form button {
+    margin: 0;
+}
+.favorites-container {
+    margin-top: 5px;
+}
+.favorites-container .favorites-header h3 {
+    color: #00375B;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: bold;
+    margin: 0 10px 5px;
+}
+.favorites-container .favorites-header .favorites-edit-link {
+    display: none;
+    float: right;
+    color: #069CF4;
+    font-size: 12px;
+    cursor: pointer;
+}
+.favorites-container .favorites-list {
+    height: 160px;
+}
+.favorites-container .favorites-list li {
+    float: left;
+    margin-left: 15px;
+    position: relative;
+}
+.favorites-container .favorites-delete-icon {
+    display: none;
+    background: url("/sites/all/modules/custom/ncaa_gigya/ncaa_gigya_favorites/images/favorites-delete.png") no-repeat;
+    position: absolute;
+    left: 83px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.favorites-container .favorites-flag {
+    background: url("/sites/all/modules/custom/ncaa_gigya/ncaa_gigya_favorites/images/favorites_flag_sprite.png") no-repeat -47px -53px;
+    width: 92px;
+    height: 102px;
+    display: block;
+    cursor: pointer;
+}
+.favorites-container .favorites-flag:active,
+.favorites-container .favorites-flag:hover {
+    text-decoration: none;
+}
+.favorites-container .favorites-flag.favorites-add-flag {
+    background-position: -159px -53px;
+}
+.favorites-container .favorites-flag .favorites-flag-icon {
+    height: 88px;
+    text-align: center;
+    padding-top: 15px;
+}
+.favorites-container .favorites-flag .favorites-label {
+    text-align: center;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    padding: 0 10px 0 0;
+}
+.favorites-container .favorites-nav-add-container {
+    display: none;
+}
+.favorites-container .favorites-nav-add-container .input-school-autocomplete {
+    display: inline-block;
+}
+.favorites-container .favorites-nav-schools-add-container {
+    text-align: center;
+}
+.favorites-container #nav-favorites-sportdiv-select {
+    display: inline-block;
+}
+.favorites-container #nav-favorites-div-select-ps {
+    margin-left: 5px;
+}
+.favorites-container .favorites-sports-list .favorites-flag {
+    background: none;
+}
+.favorites-container .favorites-sports-list .favorites-flag.favorites-add-flag {
+    background: url("/sites/all/modules/custom/ncaa_gigya/ncaa_gigya_favorites/images/flag-icon-s4ac241f8cd.png") no-repeat 0 -3708px;
+}
+.favorites-flag-sport-icon {
+    background: url("/sites/all/modules/custom/ncaa_gigya/ncaa_gigya_favorites/images/flag-icon-s4ac241f8cd.png") no-repeat;
+}
+.favorites-flag-sport-icon.flag-icon-baseball {
+    background-position: 0 -2472px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-basketball-men {
+    background-position: 0 -1957px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-basketball-women {
+    background-position: 0 -3399px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-beach-volleyball {
+    background-position: 0 -3296px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-bowling {
+    background-position: 0 -2266px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-cross-country-men {
+    background-position: 0 0;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-cross-country-women {
+    background-position: 0 -103px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-fav_sport_empty,
+.favorites-flag-sport-icon .favorites-add-flag {
+    background-position: 0 -3708px;
+    height: 102px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-fencing {
+    background-position: 0 -1854px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-fieldhockey {
+    background-position: 0 -3193px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-football {
+    background-position: 0 -824px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-golf-men {
+    background-position: 0 -1648px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-golf-women {
+    background-position: 0 -1751px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-gymnastics-men {
+    background-position: 0 -3605px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-gymnastics-women {
+    background-position: 0 -2884px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-icehockey-men {
+    background-position: 0 -1236px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-icehockey-women {
+    background-position: 0 -1339px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-lacrosse-men {
+    background-position: 0 -1133px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-lacrosse-women {
+    background-position: 0 -2369px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-rifle {
+    background-position: 0 -3502px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-rowing {
+    background-position: 0 -2163px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-skiing {
+    background-position: 0 -618px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-soccer-men {
+    background-position: 0 -1442px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-soccer-women {
+    background-position: 0 -1545px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-softball {
+    background-position: 0 -2060px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-swimming-men {
+    background-position: 0 -927px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-swimming-women {
+    background-position: 0 -1030px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-tennis-men {
+    background-position: 0 -2678px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-tennis-women {
+    background-position: 0 -2781px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-trackfield-indoor-men {
+    background-position: 0 -206px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-trackfield-indoor-women {
+    background-position: 0 -309px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-trackfield-outdoor-men {
+    background-position: 0 -412px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-trackfield-outdoor-women {
+    background-position: 0 -515px;
+    height: 99px;
+    width: 92px;
+}
+.favorites-flag-sport-icon.flag-icon-volleyball-men {
+    background-position: 0 -2575px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-volleyball-women {
+    background-position: 0 -3296px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-waterpolo-men {
+    background-position: 0 -2987px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-waterpolo-women {
+    background-position: 0 -3090px;
+    height: 99px;
+    width: 90px;
+}
+.favorites-flag-sport-icon.flag-icon-wrestling {
+    background-position: 0 -721px;
+    height: 99px;
+    width: 92px;
+}
+.main-menu {
+    background-color: #FFF;
+    border-top: solid 2px #C5C5C5;
+    border-bottom: solid 2px #C5C5C5;
+    height: 33px;
+}
+.main-menu .inner-nav {
+    margin-left: 100px;
+}
+.main-menu a:focus {
+    text-decoration: none;
+}
+.main-menu .parent {
+    float: left;
+    cursor: default;
+    position: relative;
+}
+.main-menu .parent .title {
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    font-size: 17px;
+    line-height: 34px;
+    font-weight: bold;
+    color: #0065A7;
+}
+.main-menu .parent .title.link a {
+    display: inline-block;
+    padding: 0 10px;
+}
+.main-menu .parent .title.text {
+    padding: 0 10px;
+}
+.main-menu .parent.active {
+    background-color: #00375B;
+}
+.main-menu .parent.active .title,
+.main-menu .parent.active .title a {
+    text-decoration: none;
+    color: #FFF;
+}
+.main-menu .parent.active .child {
+    visibility: visible;
+}
+.main-menu .parent.no-hover {
+    cursor: pointer;
+}
+.main-menu .parent.no-hover .child {
+    cursor: default;
+}
+.main-menu .child {
+    visibility: hidden;
+    position: absolute;
+    z-index: 101;
+    background-color: #EFEEEE;
+    box-shadow: 0 1px 10px rgba(0, 0, 1, 0.5);
+    border-top: solid 6px #00375B;
+    border-bottom: solid 6px #00375B;
+    padding: 0 10px;
+}
+.main-menu .child .edit-nav {
+    color: #0065A7;
+    background: #EEE;
+    padding: 0 5px;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+.main-menu .child .edit-nav:hover {
+    background: #FFF;
+}
+.main-menu .dropdown-list li {
+    border-top: 1px solid #CCC;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0;
+    font-weight: bold;
+    color: #0065A7;
+}
+.main-menu .dropdown-list li a {
+    padding: 4px;
+    display: block;
+}
+.main-menu .dropdown-list li a:hover {
+    text-decoration: none;
+}
+.main-menu .dropdown-list li.sub-heading,
+.main-menu .dropdown-list li.sub-heading:hover {
+    background-color: #00375B;
+    color: #FFF;
+    width: 295px;
+    margin-left: -10px;
+    padding: 2px 10px 2px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.main-menu .dropdown-list li.sub-heading a,
+.main-menu .dropdown-list li.sub-heading:hover a {
+    padding: 0;
+    background-color: inherit;
+    color: inherit;
+}
+.no-touch .main-menu .parent:hover,
+.main-menu.no-js .parent:hover {
+    background-color: #00375B;
+}
+.no-touch .main-menu .parent:hover .title,
+.no-touch .main-menu .parent:hover .title a,
+.main-menu.no-js .parent:hover .title,
+.main-menu.no-js .parent:hover .title a {
+    text-decoration: none;
+    color: #FFF;
+}
+.no-touch .main-menu .parent:not(.no-hover):hover .child,
+.main-menu.no-js .parent:not(.no-hover):hover .child {
+    visibility: visible;
+    transition-property: visibility;
+    transition-delay: .3s;
+}
+.no-touch .main-menu .dropdown-list li:hover,
+.main-menu.no-js .dropdown-list li:hover {
+    background-color: #FFF;
+}
+.no-touch .main-menu .dropdown-list li:hover.sub-heading:hover,
+.main-menu.no-js .dropdown-list li:hover.sub-heading:hover {
+    background-color: #00375B;
+}
+.main-menu .dropdown-menu {
+    width: 275px;
+}
+.main-menu .dropdown-list li a.primesport::after {
+    content: "Affliate Offer";
+    float: right;
+    color: #999;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+.main-menu .icon-wrap,
+.mobile-nav-sports .icon-wrap {
+    width: 45px;
+    height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+.main-menu .icon,
+.mobile-nav-sports .icon {
+    background: url("/sites/all/modules/custom/ncaa_nav/images/nav_icons-s99906c2a16.png") no-repeat 0 0;
+    display: inline-block;
+}
+.main-menu .icon-baseball,
+.mobile-nav-sports .icon-baseball {
+    background-position: 0 0;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-basketball,
+.mobile-nav-sports .icon-basketball {
+    background-position: 0 -26px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-basketballwomens,
+.mobile-nav-sports .icon-basketballwomens {
+    background-position: 0 -52px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-bowling,
+.mobile-nav-sports .icon-bowling {
+    background-position: 0 -78px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-cross-country,
+.mobile-nav-sports .icon-cross-country {
+    background-position: 0 -104px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-fencing,
+.mobile-nav-sports .icon-fencing {
+    background-position: 0 -130px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-fieldhockey,
+.mobile-nav-sports .icon-fieldhockey {
+    background-position: 0 -156px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-football,
+.mobile-nav-sports .icon-football {
+    background-position: 0 -182px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-golf,
+.mobile-nav-sports .icon-golf {
+    background-position: 0 -208px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-gymnastics,
+.mobile-nav-sports .icon-gymnastics {
+    background-position: 0 -234px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-gymnasticswomens,
+.mobile-nav-sports .icon-gymnasticswomens {
+    background-position: 0 -260px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-icehockey,
+.mobile-nav-sports .icon-icehockey {
+    background-position: 0 -286px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-lacrosse,
+.mobile-nav-sports .icon-lacrosse {
+    background-position: 0 -312px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-lacrossewomens,
+.mobile-nav-sports .icon-lacrossewomens {
+    background-position: 0 -338px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-rifle,
+.mobile-nav-sports .icon-rifle {
+    background-position: 0 -364px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-rowing,
+.mobile-nav-sports .icon-rowing {
+    background-position: 0 -390px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-skiing,
+.mobile-nav-sports .icon-skiing {
+    background-position: 0 -416px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-soccer,
+.mobile-nav-sports .icon-soccer {
+    background-position: 0 -442px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-softball,
+.mobile-nav-sports .icon-softball {
+    background-position: 0 -468px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-swimming,
+.mobile-nav-sports .icon-swimming {
+    background-position: 0 -494px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-tennis,
+.mobile-nav-sports .icon-tennis {
+    background-position: 0 -520px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-trackfield-indoor,
+.main-menu .icon-trackfield-outdoor,
+.mobile-nav-sports .icon-trackfield-indoor,
+.mobile-nav-sports .icon-trackfield-outdoor {
+    background-position: 0 -546px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-volleyball,
+.mobile-nav-sports .icon-volleyball {
+    background-position: 0 -572px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-volleyballwomens,
+.main-menu .icon-beach-volleyball,
+.mobile-nav-sports .icon-volleyballwomens,
+.mobile-nav-sports .icon-beach-volleyball {
+    background-position: 0 -598px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-waterpolo,
+.mobile-nav-sports .icon-waterpolo {
+    background-position: 0 -624px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .icon-wrestling,
+.mobile-nav-sports .icon-wrestling {
+    background-position: 0 -650px;
+    height: 23px;
+    width: 41px;
+}
+.main-menu .dropdown-menu.championships {
+    width: 310px;
+}
+.main-menu .dropdown-list.championships li a {
+    padding: 0;
+}
+.main-menu .champ-logo {
+    width: 120px;
+    height: 100px;
+    text-align: center;
+}
+.main-menu .champ-logo,
+.main-menu .champ-title {
+    display: table-cell;
+    vertical-align: middle;
+}
+.main-menu .champ-title {
+    font-size: 17px;
+    line-height: 21px;
+}
+.favorites .child {
+    width: 360px;
+    min-height: 360px;
+    right: 0;
+}
+.favorites .subtitle {
+    font-size: 7px;
+    line-height: 9px;
+    color: #A09F9F;
+    text-transform: uppercase;
+    text-align: center;
+}
+.favorites .nav-wrapper {
+    padding: 7px;
+}
+.favorites .nav-wrapper.fav-star {
+    background: url("/sites/all/modules/custom/ncaa_nav/images/favorites-star.png") no-repeat;
+    padding-left: 20px;
+    background-position: 0 7px;
+    margin: 0 7px;
+}
+.favorites .nav-wrapper.has-photo {
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    background-position: 0 7px;
+    margin-left: 4px;
+}
+.favorites .nav-wrapper.has-photo .title {
+    font-size: 12px !important;
+    padding-left: 5px;
+}
+.favorites .nav-favorites {
+    padding: 10px;
+}
+.favorites .nav-favorites .favorites-schools-container {
+    border-bottom: 1px solid #808080;
+}
+.favorites .nav-favorites-button {
+    background-color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
+.favorites .nav-favorites-button a {
+    background-color: #069CF4;
+    display: inline-block;
+    width: 135px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.favorites .nav-favorites-close {
+    background-color: #00375B;
+    text-align: center;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFF;
+    cursor: pointer;
+}
+.main-menu .parent.favorites .child {
+    z-index: 99;
+    border-bottom: inherit;
+    padding: 0;
+}
+.main-menu .parent.favorites .title {
+    line-height: 10px;
+    font-size: 14px;
+}
+.main-menu.no-js .parent.favorites {
+    display: none;
+}
+.main-menu .logo {
+    z-index: 201;
+    margin: -52px 0 0 -10px;
+    position: absolute;
+}
+.main-menu .child.transparent {
+    width: 785px;
+    background-color: transparent;
+    border: 0;
+    height: 1000px;
+    box-shadow: 0 0;
+}
+.main-menu .child.schools {
+    width: 860px;
+    left: -75px;
+}
+.main-menu .child.schools .right-column {
+    float: right;
+}
+.main-menu .child.schools .right-column .browse {
+    float: right;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.main-menu .child.schools .right-column .schools-search .search-icon {
+    width: 46px;
+    height: 39px;
+    background: url("/sites/all/modules/custom/ncaa_nav/images/bg-search-icon.png") no-repeat 0 0;
+}
+.main-menu .child.schools .right-column .schools-search .search-term {
+    height: 33px;
+    width: 244px;
+    font-size: 18px;
+    line-height: 33px;
+    background-color: #FFF;
+    color: #212121;
+}
+.main-menu .child.schools .right-column .my-schools {
+    clear: both;
+    padding-top: 50px;
+}
+.main-menu .school-nav-header {
+    color: #00375B;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+.main-menu .schools-list {
+    width: 540px;
+}
+.main-menu .schools-list .dropdown-list {
+    width: 260px;
+    float: left;
+}
+.main-menu .schools-list .dropdown-list:first-child {
+    padding-right: 15px;
+}
+.main-menu .schools-list .dropdown-list li {
+    height: 30px;
+    padding: 4px 0;
+}
+.main-menu .schools-list .dropdown-list li img {
+    float: left;
+    padding: 2px 10px 0 0;
+}
+.main-menu.no-js .child.schools {
+    width: 535px;
+}
+.main-menu.no-js .child.schools .right-column .school-nav-header,
+.main-menu.no-js .child.schools .right-column .schools-search,
+.main-menu.no-js .child.schools .right-column .my-schools {
+    display: none;
+}
+.main-menu .search-form {
+    margin: 0;
+    padding-top: 4px;
+}
+.main-menu .search-icon {
+    width: 30px;
+    height: 24px;
+    background: url("/sites/all/modules/custom/ncaa_nav/images/bg-search.png") no-repeat 0 -24px;
+    z-index: 1;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.main-menu .search-term {
+    height: 18px;
+    line-height: 18px;
+    width: 200px;
+    padding: 2px 2px 2px 15px;
+    margin: 0 0 0 -8px;
+    float: left;
+    color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #EBEBEB;
+    border: 1px solid #AAA;
+}
+.menu-search {
+    float: left;
+    padding: 0 10px;
+}
+.main-menu .child.sports {
+    width: 875px;
+    left: 0;
+}
+.main-menu .child.sports .edit-nav {
+    float: right;
+    position: relative;
+}
+.main-menu .highlights-column {
+    float: right;
+}
+.main-menu .highlights {
+    clear: both;
+}
+.main-menu .highlights img {
+    width: 312px;
+    height: 90px;
+}
+.main-menu .highlights li {
+    list-style: none;
+    width: 312px;
+    height: 90px;
+    padding-bottom: 2px;
+}
+.main-menu .highlights li a {
+    position: relative;
+}
+.main-menu .highlights .overlay {
+    background: url("/sites/all/modules/custom/ncaa_nav/images/bg-highlight-gradient.png") repeat-x left bottom;
+    width: 312px;
+    height: 60px;
+    bottom: 3px;
+    position: absolute;
+}
+.main-menu .highlights .sport {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFF;
+}
+.main-menu .sports-list {
+    width: 540px;
+}
+.main-menu .sports-list .dropdown-list {
+    width: 260px;
+    float: left;
+}
+.main-menu .sports-list .dropdown-list:first-child {
+    padding-right: 15px;
+}
+.main-menu .sports-list .dropdown-list li {
+    height: 30px;
+    padding: 4px 0;
+}
+.main-menu .sports-list .dropdown-list li:hover .button {
+    display: block;
+}
+.main-menu .sports-list .dropdown-list a {
+    padding: 0;
+}
+.main-menu .sports-list .dropdown-list .button {
+    display: none;
+    margin: 0;
+    float: right;
+    width: 26px;
+    height: 26px;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #0065A7;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    text-align: center;
+    margin-right: 5px;
+}
+.main-menu .my-sports .favorites-nav-sports-add-container {
+    padding-bottom: 10px;
+}
+.main-menu .my-sports .favorites-container .favorites-header h3 {
+    margin-right: 0;
+}
+.main-menu .my-sports .favorites-container .favorites-list li {
+    margin-left: 10px;
+}
+.main-menu .my-sports #nav-sports-sportdiv-select {
+    display: inline-block;
+}
+.main-menu .my-sports #nav-sports-sport-select-ps {
+    width: 185px !important;
+}
+.main-menu .my-sports #nav-sports-div-select-ps {
+    width: 75px !important;
+    margin-left: 5px;
+}
+.main-menu.no-js .my-sports {
+    display: none;
+}
+.ctools-locked {
+    color: red;
+    border: 1px solid red;
+    padding: 1em;
+}
+.ctools-owns-lock {
+    background: #FFFFDD none repeat scroll 0 0;
+    border: 1px solid #F0C020;
+    padding: 1em;
+}
+.asset-atom-content {
+    position: relative;
+}
+.asset-atom-content .atom-edit {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 5px 7px;
+    display: none;
+    font-size: 14px;
+    z-index: 1;
+    background: #333;
+}
+.asset-atom-content .atom-edit a {
+    color: #FFF;
+}
+.asset-atom-content.block-640x360 object {
+    float: left;
+}
+.asset-atom-content.block-2x1,
+.asset-atom-content.block-2x2 {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+.asset-atom-content:hover .atom-edit {
+    display: block;
+}
+#sport-subnav-div-select {
+    width: 80px;
+}
+#ncaa-mobile-drop-arrow {
+    display: none;
+}
+.sport-subnav {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 27px;
+    margin: 15px 0 10px 0;
+}
+.sport-subnav h2.title {
+    font: bold 25px "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    color: #00325f;
+    clear: none;
+    float: left;
+    margin: 2px 0 0 0;
+    cursor: default;
+}
+.sport-subnav .select-wrapper {
+    float: left;
+    margin: -13px 15px 0 0;
+    position: relative;
+    z-index: 100;
+    overflow: visible;
+}
+.sport-subnav .select-wrapper label {
+    display: none;
+}
+.sport-subnav .select-wrapper .description {
+    display: none;
+}
+.sport-subnav ul.nav-items li {
+    display: inline-block;
+    margin: 10px 9px 0 9px;
+    float: left;
+    font-size: 14px;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+}
+.sport-subnav ul.nav-items li:first-child {
+    margin-left: 15px;
+}
+.sport-subnav ul.nav-items li.active {
+    color: #002948;
+}
+.sport-subnav ul.nav-items li.active a {
+    color: #002948;
+}
+.sport-subnav ul.nav-items li a {
+    text-decoration: none;
+    color: #0062ae;
+}
+.sport-subnav ul.nav-items li a:hover {
+    text-decoration: none;
+    color: #00457b;
+}
+.sport-subnav ul.nav-items li a.nav-edit-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+    font-family: arial;
+    background: #f9f9f9;
+    padding: 0 3px;
+}
+.region-content .ncaa-sports-dropdown .dropdown-menu {
+    list-style: none;
+    margin: 0;
+}
+.ncaa-sports-dropdown {
+    height: 27px;
+    display: inline-block;
+    z-index: 30;
+    position: relative;
+}
+.ncaa-sports-dropdown .dropdown-label {
+    display: none;
+}
+.ncaa-sports-dropdown .dropdown-toggle {
+    border-radius: 0;
+    border: solid 1px #FFF;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    margin: 0;
+    width: 97px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    *zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFDDDDDD');
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+    background-image: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);
+    -moz-box-shadow: 1px 1px 6px rgba(1, 2, 2, 0.3);
+    -webkit-box-shadow: 1px 1px 6px rgba(1, 2, 2, 0.3);
+    box-shadow: 1px 1px 6px rgba(1, 2, 2, 0.3);
+}
+.ncaa-sports-dropdown .dropdown-toggle:focus {
+    outline: dotted 1px #CCC;
+}
+.ncaa-sports-dropdown .dropdown-toggle:focus + .dropdown-menu {
+    display: block;
+}
+.ncaa-sports-dropdown .dropdown-toggle span {
+    color: #0062ae;
+    font: bold 14px/25px "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+}
+.ncaa-sports-dropdown .dropdown-toggle div {
+    border-left: 1px solid #FFF;
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+.ncaa-sports-dropdown .dropdown-toggle div .caret {
+    width: 100%;
+    height: 100%;
+    background: url("/sites/all/modules/custom/ncaa_sports/img/ncaa-sport-sprites.png") no-repeat 8px 8px;
+    margin: 0;
+    display: block;
+}
+.ncaa-sports-dropdown .dropdown-menu {
+    position: absolute;
+    display: none;
+    border-right: solid 1px #FFF;
+    border-bottom: solid 1px #FFF;
+    border-left: solid 1px #FFF;
+    width: 95px;
+    margin: 0;
+    background-color: #dddddd;
+    *zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFDDDDDD', endColorstr='#FFFFFFFF');
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #ffffff));
+    background-image: -moz-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+    background-image: -webkit-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, #dddddd 0%, #ffffff 100%);
+    -moz-box-shadow: 1px 1px 6px rgba(1, 2, 2, 0.3);
+    -webkit-box-shadow: 1px 1px 6px rgba(1, 2, 2, 0.3);
+    box-shadow: 1px 1px 6px rgba(1, 2, 2, 0.3);
+}
+.ncaa-sports-dropdown .dropdown-menu:hover {
+    display: block;
+}
+.ncaa-sports-dropdown .dropdown-menu li {
+    color: #0062ae;
+    font: normal 13px "TechwoodSlabW04", "Rockwell", "Georgia", serif;
+    padding: 10px;
+    list-style: none;
+    cursor: default;
+}
+.ncaa-sports-dropdown .dropdown-menu li:focus {
+    outline: dotted 1px #CCC;
+}
+.ncaa-sports-dropdown .dropdown-menu li:hover {
+    background-color: #0062ae;
+    color: #FFF;
+}
+.ncaa-sports-dropdown .dropdown-menu li.active-result {
+    cursor: pointer;
+}
+.select-wrapper.ncaa-mobile {
+    float: right;
+}
+.select-wrapper.ncaa-mobile .open .dropdown-menu {
+    display: block;
+}
+.sport-subnav .ncaa-sports-dropdown {
+    margin: 15px 0 0px 0;
+}
+.sport-subnav .ncaa-sports-dropdown .dropdown-toggle {
+    text-align: left;
+}
+.sport-subnav .ncaa-sports-dropdown .dropdown-toggle .active-label {
+    margin-left: 9px;
+}
+#ncaa-footer {
+    padding: 5px 0 0 30px;
+}
+#ncaa-footer #ncaa-footer-links {
+    margin: auto;
+    width: 920px;
+}
+:13px;
+font-family:Arial,
+Helvetica,
+sans-serif;
+color:#b9bcbe;
+
+}
+#globalfollow-menu-button {
+    position:absolute;
+    right:20px;
+    top:-30px;
+    width:126px;
+    background:url(/sites/all/modules/custom/ncaa_social/ncaa_social_globalfollow/images/global_social_sprite.png);
+    text-indent:-9999px;
+    height:27px;
+}
+#globalfollow-menu {
+    display:none;
+    position:absolute;
+    left:655px;
+    width:315px;
+    z-index:101;
+    background-color:#efeeee;
+    -moz-box-shadow:0 1px 10px rgba(0,
+    0,
+    1,
+    0.5);
+    -webkit-box-shadow:0 1px 10px rgba(0,
+    0,
+    1,
+    0.5);
+    box-shadow:0 1px 10px rgba(0,
+    0,
+    1,
+    0.5);
+    border-top:solid 6px #00375b;
+    border-bottom:solid 6px #00375b;
+    padding:0 10px;
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    font-size:14px;
+    line-height:28px;
+    margin:0;
+    font-weight:bold;
+    color:#0065a7;
+}
+#globalfollow-menu .globalfollow-menu-item {
+    border-top:1px solid #ccc;
+}
+#globalfollow-menu .globalfollow-menu-item .globalfollow-links {
+    float:right;
+    height:22px;
+    margin-top:3px;
+}
+#globalfollow-menu .globalfollow-menu-item .globalfollow-links a {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    margin-right:2px;
+    text-indent:-9999px;
+    background:url(/sites/all/modules/custom/ncaa_social/ncaa_social_globalfollow/images/global_social_sprite.png) top left;
+}
+#globalfollow-menu .globalfollow-menu-item .globalfollow-links a.googleplus {
+    background-position:-141px -6px;
+}
+#globalfollow-menu .globalfollow-menu-item .globalfollow-links a.facebook {
+    background-position:-30px -6px;
+}
+#globalfollow-menu .globalfollow-menu-item .globalfollow-links a.twitter {
+    background-position:-56px -6px;
+}
+#globalfollow-menu .globalfollow-menu-item .globalfollow-links a.youtube {
+    background-position:-83px -6px;
+}
+#globalfollow-menu .globalfollow-menu-item .globalfollow-links a.instagram {
+    background-position:-106px -6px;
+}
+#globalfollow-menu .globalfollow-menu-item .globalfollow-links a:hover {
+    -webkit-filter:contrast(150%);
+    filter:contrast(150%);
+}
+.core-header-banner {
+    line-height:1;
+}
+.core-header-banner .sponsor {
+    margin-top:15px;
+    position:absolute;
+    right:20px;
+}
+.core-header-banner .sponsor.right {
+    right:20px;
+}
+.core-header-banner .sponsor.left {
+    right:auto;
+    left:20px;
+}
+.core-header-banner .core-banner-subtitle {
+    position:absolute;
+    left:150px;
+    top:90px;
+}
+.core-header-banner.core-mobile .core-banner-subtitle {
+    position:absolute;
+    left:10px;
+    bottom:10px;
+}
+.bracket-page {}
+.bracket-page .bracket-game {
+    position:absolute;
+    background:white;
+    padding:2px;
+    line-height:1em;
+    z-index:25;
+}
+.bracket-page .bracket-background {
+    top:0;
+    position:absolute;
+}
+.bracket-page #bracket-top,
+.bracket-page #bracket-main {
+    margin:15px auto 0;
+}
+.bracket-page #bracket-top,
+.bracket-page #bracket-bottom {
+    height:680px;
+}
+.bracket-page #bracket-middle {
+    height:150px;
+}
+.bracket-page #bracket-footer {
+    height:100px;
+    margin:10px auto;
+    padding:10px 0;
+}
+.bracket-page .bracket-region {
+    position:relative;
+}
+.bracket-page .game-set {
+    position:absolute;
+}
+.bracket-page .region-info {
+    position:absolute;
+}
+.bracket-page .region-info .region-title {
+    color:#00375C;
+    margin-bottom:0;
+    margin-top:12px;
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    font-size:18px;
+    font-weight:bold;
+}
+.bracket-page .region-info .region-title,
+.bracket-page .region-info .region-subtitle {
+    width:200px;
+    text-transform:uppercase;
+}
+.bracket-page .region-info li {
+    font-size:9px;
+    line-height:9px;
+    color:#00375C;
+    font-family:sans-serif;
+}
+.bracket-page .rtl .region-info,
+.bracket-page .ltr .region-info {
+    top:317px;
+}
+.bracket-page .rtl .region-info {
+    right:100px;
+    text-align:left;
+}
+.bracket-page .ltr .region-info {
+    left:100px;
+    text-align:right;
+}
+.bracket-page .ctr .region-info {
+    width:100%;
+    text-align:center;
+}
+.bracket-page .ctr .region-info .region-title {
+    width:100%;
+    margin-top:0px;
+    text-align:center;
+}
+.bracket-page .ctr .region-info .region-subtitle {
+    width:100%;
+    text-align:center;
+}
+.bracket-page {}
+.bracket-page .game-set .flags-sprite,
+.bracket-page .game-set .flags-bot-grey-flag,
+.bracket-page .game-set .flags-bot-lgt-grey-flag,
+.bracket-page .game-set .flags-bot-lrg-wht-flag,
+.bracket-page .game-set .flags-bot-med-wht-flag,
+.bracket-page .game-set .flags-br-black-top-flag,
+.bracket-page .game-set .flags-br-red-flag,
+.bracket-page .game-set .flags-br-red-top-flag,
+.bracket-page .game-set .flags-br-white-flag,
+.bracket-page .game-set .flags-br-white-top-flag,
+.bracket-page .game-set .flags-sm-black-top-flag,
+.bracket-page .game-set .flags-sm-red-bottom-flag,
+.bracket-page .game-set .flags-sm-red-top-flag,
+.bracket-page .game-set .flags-sm-white-bottom-flag,
+.bracket-page .game-set .flags-sm-white-top-flag,
+.bracket-page .game-set .flags-top-grey-flag,
+.bracket-page .game-set .flags-top-lgt-grey-flag,
+.bracket-page .game-set .flags-top-lrg-wht-flag,
+.bracket-page .game-set .flags-top-med-wht-flag {
+    background:url('/sites/all/modules/custom/live_data/images/flags-s75cb5cf346.png') no-repeat;
+}
+.bracket-page .game-set .flags-bot-grey-flag {
+    background-position:0 0;
+    height:15px;
+    width:63px;
+}
+.bracket-page .game-set .flags-bot-lgt-grey-flag {
+    background-position:0 -30px;
+    height:15px;
+    width:63px;
+}
+.bracket-page .game-set .flags-bot-lrg-wht-flag {
+    background-position:0 -60px;
+    height:15px;
+    width:78px;
+}
+.bracket-page .game-set .flags-bot-med-wht-flag {
+    background-position:0 -90px;
+    height:12px;
+    width:69px;
+}
+.bracket-page .game-set .flags-br-black-top-flag {
+    background-position:0 -117px;
+    height:15px;
+    width:99px;
+}
+.bracket-page .game-set .flags-br-red-flag {
+    background-position:0 -147px;
+    height:15px;
+    width:99px;
+}
+.bracket-page .game-set .flags-br-red-top-flag {
+    background-position:0 -177px;
+    height:15px;
+    width:99px;
+}
+.bracket-page .game-set .flags-br-white-flag {
+    background-position:0 -207px;
+    height:15px;
+    width:99px;
+}
+.bracket-page .game-set .flags-br-white-top-flag {
+    background-position:0 -237px;
+    height:15px;
+    width:99px;
+}
+.bracket-page .game-set .flags-sm-black-top-flag {
+    background-position:0 -267px;
+    height:15px;
+    width:89px;
+}
+.bracket-page .game-set .flags-sm-red-bottom-flag {
+    background-position:0 -297px;
+    height:15px;
+    width:89px;
+}
+.bracket-page .game-set .flags-sm-red-top-flag {
+    background-position:0 -327px;
+    height:15px;
+    width:89px;
+}
+.bracket-page .game-set .flags-sm-white-bottom-flag {
+    background-position:0 -357px;
+    height:12px;
+    width:55px;
+}
+.bracket-page .game-set .flags-sm-white-top-flag {
+    background-position:0 -384px;
+    height:12px;
+    width:55px;
+}
+.bracket-page .game-set .flags-top-grey-flag {
+    background-position:0 -411px;
+    height:15px;
+    width:63px;
+}
+.bracket-page .game-set .flags-top-lgt-grey-flag {
+    background-position:0 -441px;
+    height:15px;
+    width:63px;
+}
+.bracket-page .game-set .flags-top-lrg-wht-flag {
+    background-position:0 -471px;
+    height:15px;
+    width:78px;
+}
+.bracket-page .game-set .flags-top-med-wht-flag {
+    background-position:0 -501px;
+    height:12px;
+    width:69px;
+}
+.bracket-page .game-cell {
+    color:#8B8B8B;
+}
+.bracket-page .team-info {
+    -moz-box-shadow:0px 1px 3px 0px rgba(10,
+    10,
+    10,
+    0.1);
+    -webkit-box-shadow:0px 1px 3px 0px rgba(10,
+    10,
+    10,
+    0.1);
+    box-shadow:0px 1px 3px 0px rgba(10,
+    10,
+    10,
+    0.1);
+    clear:both;
+    font-weight:normal;
+    height:26px;
+    line-height:26px;
+}
+.bracket-page .team-info.info-top,
+.bracket-page .team-info.info-bottom {
+    background:#FFF;
+}
+.bracket-page .team-info.info-bottom {
+    margin-top:2px;
+}
+.bracket-page .team-info.winner {
+    color:#00375C;
+}
+.bracket-page .live .team-name {
+    color:#1073e7;
+    font-weight:bold;
+}
+.bracket-page .live .team-score {
+    color:#00375C;
+    font-weight:bold;
+}
+.bracket-page .pre .team-name,
+.bracket-page .pre .team-score {
+    color:#00375C;
+}
+.bracket-page .canceled .team-name,
+.bracket-page .canceled .team-score,
+.bracket-page .postponed .team-name,
+.bracket-page .postponed .team-score,
+.bracket-page .suspended .team-name,
+.bracket-page .suspended .team-score {
+    color:#888;
+}
+.bracket-page .team-name {
+    overflow:hidden;
+    font-weight:bold;
+    white-space:nowrap;
+    float:left;
+    font-size:11px;
+    padding:0px 2px 0px 1px;
+}
+.bracket-page .team-score {
+    font-weight:bold;
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    font-size:12px;
+    width:19px;
+}
+.bracket-page .game-time,
+.bracket-page .game-quarter {
+    float:right;
+    text-align:left;
+    text-transform:capitalize;
+    font-size:9px;
+    line-height:26px;
+    right:0px;
+    padding-right:5px;
+    color:#888;
+    font-weight:bold;
+}
+.bracket-page .game-time .active,
+.bracket-page .game-quarter .active {
+    display:block;
+}
+.bracket-page .show-logo .team-logo {
+    width:24px;
+}
+.bracket-page .team-logo {
+    float:left;
+    padding:0px 2px;
+}
+.bracket-page .team-logo img {
+    max-width:100%;
+    height:auto;
+    vertical-align:middle;
+}
+.bracket-page .team-seed {
+    float:left;
+    text-align:right;
+    width:12px;
+    color:#AAA;
+    font-size:10px;
+    font-weight:bold;
+}
+.bracket-page .team-seed:after {
+    content:'.';
+    visibility:hidden;
+}
+.bracket-page .game-sm .team-info.info-bottom,
+.bracket-page .game-sm .team-info.info-top {
+    height:32px;
+    line-height:32px;
+}
+.bracket-page .game-sm .team-score {
+    padding-left:2px;
+}
+.bracket-page .ltr .game-md .team-seed,
+.bracket-page .rtl .game-md .team-seed,
+.bracket-page .ctr .game-md .team-seed {
+    padding:0px 1px 0 3px;
+    width:15px;
+}
+.bracket-page .game-md .team-info.info-bottom,
+.bracket-page .game-md .team-info.info-top {
+    font-size:10px;
+    height:32px;
+    line-height:32px;
+}
+.bracket-page .game-md .team-seed {
+    height:22px;
+    line-height:30px;
+    text-align:center;
+    padding:0px 1px;
+}
+.bracket-page .game-md .team-name {
+    width:96px;
+    padding:0px;
+}
+.bracket-page .game-md .team-logo {
+    height:20px;
+    width:24px;
+}
+.bracket-page .game-md .team-logo img {
+    max-width:100%;
+    height:auto;
+    padding:0px 1px 0px 1px;
+}
+.bracket-page .game-md .game-time,
+.bracket-page .game-md .game-quarter {
+    margin-right:1px;
+    padding-left:0px;
+    position:absolute;
+}
+.bracket-page .game-lg .team-info.info-bottom,
+.bracket-page .game-lg .team-info.info-top {
+    font-size:10px;
+    height:32px;
+    line-height:32px;
+}
+.bracket-page .game-lg .team-seed {
+    height:33px;
+    line-height:33px;
+}
+.bracket-page .game-lg .team-score {
+    font-size:14px;
+}
+.bracket-page .game-xl {
+    width:225px !important;
+}
+.bracket-page .game-xl.show-logo .team-logo {
+    width:30px;
+    padding:0px 2px 0 4px;
+}
+.bracket-page .game-xl .team-info.info-bottom,
+.bracket-page .game-xl .team-info.info-top {
+    font-size:10px;
+    height:38px;
+    line-height:38px;
+}
+.bracket-page .game-xl .team-seed {
+    height:39px;
+    line-height:39px;
+}
+.bracket-page .game-xl .team-score {
+    font-size:16px;
+    background-position:28px center !important;
+    padding-right:16px !important;
+}
+.bracket-page .game-xl .game-preview {
+    height:72px;
+}
+.bracket-page .game-preview {
+    width:41px;
+    direction:ltr;
+    height:50px;
+    background:#FFF;
+    right:0;
+    position:absolute;
+    z-index:100;
+    border:8px solid #FFF;
+    border-bottom:0px solid #FFF;
+    border-top:3px solid #FFF;
+    border-left:0px solid #FFF;
+    border-right:0px solid #FFF;
+    text-align:center;
+    line-height:14px;
+    color:#888;
+    font-weight:bold;
+    font-size:9px;
+    display:table;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+}
+.bracket-page .game-preview .inner {
+    display:table-cell;
+    vertical-align:middle;
+}
+.bracket-page .game-preview .inner span {
+    display:inline-block;
+    white-space:nowrap;
+}
+.bracket-page .game-preview .inner .network {
+    display:inline-block;
+    width:100%;
+}
+.bracket-page .game-sm .game-preview,
+.bracket-page .game-lg .game-preview,
+.bracket-page .game-md .game-preview {
+    height:62px;
+    line-height:14px;
+}
+.bracket-page .rtl .game-preview {
+    right:auto;
+    left:0;
+}
+.bracket-page .rtl .team-name {
+    padding:0px 1px 0px 2px;
+}
+.bracket-page .live-top,
+.bracket-page .live-bottom {
+    white-space:nowrap;
+    display:block;
+    text-transform:uppercase;
+    z-index:9;
+    position:relative;
+    height:15px;
+    color:#AAA;
+    font-weight:bold;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+.bracket-page .live-bottom {
+    line-height:14px;
+    font-size:9px;
+    width:78px;
+    direction:ltr;
+}
+.bracket-page .live-bottom .flags-bot-lrg-wht-flag {
+    height:12px;
+}
+.bracket-page .live-top {
+    font-size:10px;
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    z-index:11;
+    color:#FFF;
+    line-height:16px;
+}
+.bracket-page .live-top a {
+    z-index:11;
+    color:#FFF;
+    cursor:pointer;
+    display:block;
+    line-height:14px;
+}
+.bracket-page .live-top a:hover,
+.bracket-page .live-top a:focus,
+.bracket-page .live-top a:visited,
+.bracket-page .live-top a:active {
+    text-decoration:none;
+    color:#FFF;
+}
+.bracket-page #bracket-champ {
+    width:200px;
+    position:relative;
+    left:50%;
+    top:85px;
+    margin-left:-100px;
+    text-align:center;
+    display:none;
+}
+.bracket-page #bracket-champ h3 {
+    padding:4px 0px;
+    display:inline-block;
+    width:200px;
+    margin:0;
+    font-weight:bold;
+    color:#00375C;
+    text-align:center;
+    text-transform:uppercase;
+    white-space:nowrap;
+    padding:10px 0;
+}
+.bracket-page #bracket-champ .champion {
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-box-shadow:0px 2px 3px 1px rgba(10,
+    10,
+    10,
+    0.1);
+    -webkit-box-shadow:0px 2px 3px 1px rgba(10,
+    10,
+    10,
+    0.1);
+    box-shadow:0px 2px 3px 1px rgba(10,
+    10,
+    10,
+    0.1);
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    margin:0 auto;
+    color:#0065A8;
+    font-size:16px;
+    text-align:center;
+    padding:4px 0px;
+    background:#FFF;
+    padding:5px 3px;
+    display:block;
+}
+.bracket-page #bracket-champ .champion p {
+    margin:0;
+}
+.bracket-page #bracket-champ .champion img {
+    vertical-align:middle;
+}
+.bracket-page #bracket-final h3,
+.bracket-page #bracket-final h2 {
+    text-align:center;
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    font-weight:bold;
+    font-size:14px;
+    color:#00375C;
+    text-transform:uppercase;
+    white-space:nowrap;
+    margin:0;
+}
+.bracket-page #bracket-final-rounds {
+    text-align:center;
+    font-family:"HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+    position:relative;
+    top:-25px;
+}
+.bracket-page #bracket-final-rounds h3 {
+    color:#666;
+    position:absolute;
+    font-family:"HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+    margin:0;
+    width:175px;
+    height:16px;
+    text-transform:inherit;
+    font-size:10px;
+}
+.bracket-page #bracket-final-rounds li {
+    color:#666;
+    position:absolute;
+    width:175px;
+    line-height:12px;
+    margin:18px 0 0 0;
+}
+.bracket-page #bracket-final-rounds .ctr {
+    left:400px;
+}
+.bracket-page #bracket-final-rounds .left {
+    left:200px;
+}
+.bracket-page #bracket-final-rounds .right {
+    right:200px;
+}
+.bracket-page #bracket-final-rounds h3.champ-title {
+    text-align:center;
+    text-transform:uppercase;
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    font-weight:bold;
+    font-size:14px;
+    color:#00375C;
+    white-space:nowrap;
+    margin:0;
+    padding:0px 0 5px;
+    width:100%;
+    left:0;
+}
+.bracket-page #bracket-final-rounds li.champ-subtitle {
+    width:100%;
+    text-align:center;
+    color:#00375C;
+    text-transform:none;
+    font-size:11px;
+    margin-top:20px;
+    left:0;
+}
+.bracket-page #bracket-final-games {
+    position:relative;
+    display:inline-block;
+}
+.bracket-page #bracket-final-games .pos-02 .live-top {
+    direction:rtl;
+}
+.bracket-page #bracket-final-games .pos-02 .live-bottom {
+    direction:ltr;
+    float:left;
+}
+.bracket-page #bracket-final-games .pos-02 .bracket-game {
+    right:auto;
+    left:0;
+}
+.team-64 #bracket-final.ctr .grp-5.pos-01,
+.team-64-3rd #bracket-final.ctr .grp-5.pos-01 {
+    left:195px;
+    top:0;
+}
+.team-64 #bracket-final.ctr .grp-5.pos-02,
+.team-64-3rd #bracket-final.ctr .grp-5.pos-02 {
+    left:595px;
+    top:0;
+}
+.team-64 #bracket-final.ctr .grp-6,
+.team-64-3rd #bracket-final.ctr .grp-6 {
+    left:385px;
+}
+.team-64 #bracket-final.ctr .grp-6.pos-01,
+.team-64-3rd #bracket-final.ctr .grp-6.pos-01 {
+    top:0;
+}
+.team-68 #bracket-final.ctr .grp-6.pos-01 {
+    left:195px;
+    top:0;
+}
+.team-68 #bracket-final.ctr .grp-6.pos-02 {
+    left:595px;
+    top:0;
+}
+.team-68 #bracket-final.ctr .grp-7 {
+    left:385px;
+}
+.team-68 #bracket-final.ctr .grp-7.pos-01 {
+    top:0;
+}
+.team-32 #bracket-final.ctr .grp-4.pos-01 {
+    top:0;
+    left:195px;
+}
+.team-32 #bracket-final.ctr .grp-4.pos-02 {
+    top:0;
+    left:595px;
+}
+.team-32 #bracket-final.ctr .grp-5 {
+    left:385px;
+}
+.team-32 #bracket-final.ctr .grp-5.pos-01 {
+    top:0;
+}
+.team-16 #bracket-final.ctr .grp-3.pos-01 {
+    top:0;
+    left:195px;
+}
+.team-16 #bracket-final.ctr .grp-3.pos-02 {
+    top:0;
+    left:595px;
+}
+.team-16 #bracket-final.ctr .grp-4 {
+    left:385px;
+}
+.team-16 #bracket-final.ctr .grp-4.pos-01 {
+    top:0;
+}
+.team-8 #bracket-final.ctr .grp-4.pos-01 {
+    top:0;
+    left:195px;
+}
+.team-8 #bracket-final.ctr .grp-4.pos-02 {
+    top:0;
+    left:595px;
+}
+.team-8 #bracket-final.ctr .grp-5 {
+    left:385px;
+}
+.team-8 #bracket-final.ctr .grp-5.pos-01 {
+    top:0;
+}
+.bracket-page #bracket-footer {
+    background:#a5a5ad;
+}
+.bracket-page #bracket-footer.current {
+    background:#666;
+}
+.bracket-page #bracket-third {
+    position:absolute;
+    width:180px;
+    left:50%;
+    margin-left:-90px;
+    bottom:0px;
+    height:100px;
+}
+.bracket-page #bracket-third #game802 {
+    top:0;
+    left:0;
+}
+.bracket-page #bracket-third h3 {
+    text-align:center;
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    font-weight:bold;
+    font-size:13px;
+    color:#888;
+    text-transform:uppercase;
+    white-space:nowrap;
+    margin-top:-30px;
+}
+.bracket-page #bracket-first .region-info .region-title {
+    margin:0;
+    top:30px;
+    color:#FFF;
+    position:absolute;
+    text-align:center;
+}
+.bracket-page #bracket-first .region-info .region-subtitle {
+    margin:0;
+    top:55px;
+    color:#FFF;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    text-transform:initial;
+    font-weight:bold;
+}
+.bracket-page #bracket-first.ctr .col-1 {
+    left:35px;
+}
+.bracket-page #bracket-first.ctr .col-1.pos-1 {
+    top:0;
+}
+.bracket-page #bracket-first.ctr .col-2 {
+    left:250px;
+}
+.bracket-page #bracket-first.ctr .col-2.pos-1 {
+    top:0;
+}
+.bracket-page #bracket-first.ctr .col-3 {
+    right:250px;
+}
+.bracket-page #bracket-first.ctr .col-3.pos-1 {
+    top:0;
+}
+.bracket-page #bracket-first.ctr .col-4 {
+    right:35px;
+}
+.bracket-page #bracket-first.ctr .col-4.pos-1 {
+    top:0;
+}
+.bracket-page .regional-reference {
+    font-size:13px;
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    color:#FFF;
+    width:35px;
+    position:absolute;
+    display:block;
+    font-weight:bold;
+    margin-top:30px;
+    text-align:center;
+}
+.bracket-page .regional-reference.game-1 {
+    left:0px;
+}
+.bracket-page .regional-reference.game-2 {
+    left:205px;
+}
+.bracket-page .regional-reference.game-3 {
+    right:205px;
+}
+.bracket-page .regional-reference.game-4 {
+    right:0px;
+}
+#ncaa-bracket-social {
+    width:130px;
+    text-align:center;
+    position:absolute;
+    z-index:20;
+    left:435px;
+    top:70px;
+}
+#ncaa-bracket-social .timezone {
+    text-align:center;
+    font-size:12px;
+    font-weight:bold;
+    color:#00375C;
+    display:block;
+    margin-bottom:5px;
+}
+#ncaa-bracket-social .social-sprite,
+#ncaa-bracket-social .social-facebook-share,
+#ncaa-bracket-social .social-googleplus-share,
+#ncaa-bracket-social .social-print-bracket,
+#ncaa-bracket-social .social-twitter-share {
+    background:url('/sites/all/modules/custom/live_data/images/brackets/social-sd610216270.png') no-repeat;
+}
+#ncaa-bracket-social .social-facebook-share {
+    background-position:0 0;
+    height:31px;
+    width:31px;
+}
+#ncaa-bracket-social .social-googleplus-share {
+    background-position:0 -46px;
+    height:31px;
+    width:31px;
+}
+#ncaa-bracket-social .social-print-bracket {
+    background-position:0 -92px;
+    height:40px;
+    width:102px;
+}
+#ncaa-bracket-social .social-twitter-share {
+    background-position:0 -147px;
+    height:31px;
+    width:32px;
+}
+#ncaa-bracket-social #social-buttons {
+    width:114px;
+    margin:auto;
+    display:inline-block;
+}
+#ncaa-bracket-social #social-buttons li a {
+    margin-right:10px;
+    float:left;
+}
+#ncaa-bracket-social #social-buttons li a.last {
+    margin-right:0px;
+}
+#ncaa-bracket-social #social-buttons li a:hover {
+    -moz-box-shadow:0 0px 2px 2px rgba(0,
+    0,
+    0,
+    0.05);
+    -webkit-box-shadow:0 0px 2px 2px rgba(0,
+    0,
+    0,
+    0.05);
+    box-shadow:0 0px 2px 2px rgba(0,
+    0,
+    0,
+    0.05);
+}
+#ncaa-bracket-social .social-print-bracket {
+    display:block;
+    margin:auto;
+    cursor:pointer;
+    text-indent:-119988px;
+    overflow:hidden;
+    text-align:left;
+    text-transform:capitalize;
+}
+#ncaa-bracket-social .social-print-bracket.champ-print {
+    width:102px;
+}
+#ncaa-bracket-social .social-print-bracket:hover {
+    -moz-box-shadow:0 0px 2px 2px rgba(0,
+    0,
+    0,
+    0.05);
+    -webkit-box-shadow:0 0px 2px 2px rgba(0,
+    0,
+    0,
+    0.05);
+    box-shadow:0 0px 2px 2px rgba(0,
+    0,
+    0,
+    0.05);
+}
+.bracket-page {}
+.bracket-page .sticky {
+    position:fixed;
+    width:100%;
+    left:auto;
+    top:0;
+    z-index:30;
+    border-top:0;
+}
+.bracket-page .champ-banner {
+    display:block;
+}
+.bracket-page .bracket-champ-logo {
+    width:170px;
+    position:absolute;
+    display:block;
+    right:400px;
+    text-align:center;
+    top:-160px;
+}
+.bracket-page .bracket-game {
+    display:none;
+}
+.bracket-page .brackets-sponsor {
+    width:234px;
+    height:60px;
+    right:20px;
+    margin-top:20px;
+    position:absolute;
+}
+.bracket-page .mobile .brackets-sponsor {
+    width:88px;
+    height:31px;
+    margin-top:12px;
+    left:232px;
+}
+.bracket-page #rounds {
+    width:1000px;
+    margin:auto;
+}
+.bracket-page .round-table {
+    display:table;
+    background-color:#A5A5AD;
+}
+.bracket-page .round-table .round-row {
+    display:table-row;
+    font-family:"HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+.bracket-page .round-table .round-row.round-header .round-cell {
+    background-color:#797985;
+    font-family:"TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    white-space:nowrap;
+    font-weight:normal;
+}
+.bracket-page .round-table .round-row.round-header .round-cell.current {
+    background-color:#363233;
+}
+.bracket-page .round-table .round-row.round-header .round-cell.final {
+    font-weight:bold;
+    font-size:12px;
+    font-weight:bold;
+}
+.bracket-page .round-table .round-row .round-cell {
+    color:#FFF;
+    display:table-cell;
+    font-size:10px;
+    line-height:11px;
+    vertical-align:middle;
+    border-right:1px solid #FFF;
+    padding:8px 10px;
+    font-weight:bold;
+    border-collapse:collapse;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.bracket-page .round-table .round-row .round-cell.round1 {
+    padding:8px 15px 8px 15px;
+}
+.bracket-page .round-table .round-row .round-cell.current {
+    background-color:#666666;
+}
+.bracket-page .round-table .round-row .round-cell.final {
+    text-align:center;
+}
+.bracket-page .round-table .round-row .round-cell.right {
+    text-align:right;
+}
+.bracket-page .round-table .round-row .round-cell.last {
+    border-right:0px;
+}
+.bracket-page .bracket-parent {
+    width:1000px;
+    margin:auto;
+    font-size:10px;
+    position:relative;
+    padding:0 15px;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.bracket-page .bracket-section {
+    width:100%;
+    display:inline-block;
+    position:relative;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.bracket-page .bracket-footer {
+    clear:both;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:34px;
+    margin-top:13px;
+    height:21px;
+}
+.bracket-page .game-set {
+    width:160px;
+}
+.bracket-page .game-set.game-sm {
+    width:180px;
+}
+.bracket-page .game-set.game-md {
+    width:183px;
+}
+.bracket-page .game-set.game-lg {
+    width:200px;
+}
+.bracket-page .disabled {
+    opacity:0;
+    visibility:hidden;
+}
+.bracket-page .winner * {
+    font-weight:bold;
+}
+.bracket-page .game-cell {
+    font-weight:normal;
+    z-index:10;
+    position:relative;
+}
+.bracket-page .ltr {
+    float:left;
+    direction:ltr;
+}
+.bracket-page .rtl {
+    float:right;
+    direction:rtl;
+}
+.bracket-page .rtl {
+    direction:rtl;
+}
+.bracket-page .rtl .region-info .region-title {
+    text-align:left;
+    direction:ltr;
+}
+.bracket-page .rtl .region-info li {
+    text-align:left;
+    direction:ltr;
+}
+.bracket-page .rtl .team-name {
+    direction:ltr;
+}
+.bracket-page .rtl .team-name,
+.bracket-page .rtl .team-seed {
+    float:right;
+    text-align:left;
+}
+.bracket-page .rtl .team-seed {
+    padding:0px 4px 0 1px;
+}
+.bracket-page .rtl .show-logo .team-seed {
+    padding:0px 2px 0 0;
+}
+.bracket-page .rtl .team-score {
+    float:left;
+    text-align:left;
+    padding-left:10px;
+}
+.bracket-page .rtl .live-bottom,
+.bracket-page .rtl .watch-live-bottom {
+    float:left;
+}
+.bracket-page .rtl .game-time,
+.bracket-page .rtl .game-quarter {
+    float:left;
+    text-align:right;
+    padding-left:5px;
+}
+.bracket-page .rtl .last .game-time,
+.bracket-page .rtl .last .game-quarter,
+.bracket-page .rtl .last .team-score {
+    float:left;
+    text-align:left;
+}
+.bracket-page .rtl .winner .team-score {
+    background:url("/application/modules/Group/externals/images/trmt/arrow-right-blue-sm.png") no-repeat scroll 3px center transparent;
+}
+.bracket-page .ltr,
+.bracket-page .ctr,
+.bracket-page .third-place,
+.bracket-page .fifth-place,
+.bracket-page .seventh-place {
+    direction:ltr;
+}
+.bracket-page .ltr .region-info .region-title,
+.bracket-page .ctr .region-info .region-title,
+.bracket-page .third-place .region-info .region-title,
+.bracket-page .fifth-place .region-info .region-title,
+.bracket-page .seventh-place .region-info .region-title {
+    text-align:right;
+}
+.bracket-page .ltr .region-info li,
+.bracket-page .ctr .region-info li,
+.bracket-page .third-place .region-info li,
+.bracket-page .fifth-place .region-info li,
+.bracket-page .seventh-place .region-info li {
+    text-align:right;
+}
+.bracket-page .ltr .team-name,
+.bracket-page .ctr .team-name,
+.bracket-page .third-place .team-name,
+.bracket-page .fifth-place .team-name,
+.bracket-page .seventh-place .team-name {
+    direction:ltr;
+}
+.bracket-page .ltr .team-name,
+.bracket-page .ltr .team-seed,
+.bracket-page .ctr .team-name,
+.bracket-page .ctr .team-seed,
+.bracket-page .third-place .team-name,
+.bracket-page .third-place .team-seed,
+.bracket-page .fifth-place .team-name,
+.bracket-page .fifth-place .team-seed,
+.bracket-page .seventh-place .team-name,
+.bracket-page .seventh-place .team-seed {
+    float:left;
+    text-align:left;
+}
+.bracket-page .ltr .team-seed,
+.bracket-page .ctr .team-seed,
+.bracket-page .third-place .team-seed,
+.bracket-page .fifth-place .team-seed,
+.bracket-page .seventh-place .team-seed {
+    padding:0px 1px 0 4px;
+}
+.bracket-page .ltr .show-logo .team-seed,
+.bracket-page .ctr .show-logo .team-seed,
+.bracket-page .third-place .show-logo .team-seed,
+.bracket-page .fifth-place .show-logo .team-seed,
+.bracket-page .seventh-place .show-logo .team-seed {
+    padding:0;
+}
+.bracket-page .ltr .team-score,
+.bracket-page .ctr .team-score,
+.bracket-page .third-place .team-score,
+.bracket-page .fifth-place .team-score,
+.bracket-page .seventh-place .team-score {
+    float:right;
+    text-align:right;
+    padding-right:10px;
+}
+.bracket-page .ltr .live-bottom,
+.bracket-page .ltr .watch-live-bottom,
+.bracket-page .ctr .live-bottom,
+.bracket-page .ctr .watch-live-bottom,
+.bracket-page .third-place .live-bottom,
+.bracket-page .third-place .watch-live-bottom,
+.bracket-page .fifth-place .live-bottom,
+.bracket-page .fifth-place .watch-live-bottom,
+.bracket-page .seventh-place .live-bottom,
+.bracket-page .seventh-place .watch-live-bottom {
+    float:right;
+}
+.bracket-page .ltr .game-time,
+.bracket-page .ltr .game-quarter,
+.bracket-page .ctr .game-time,
+.bracket-page .ctr .game-quarter,
+.bracket-page .third-place .game-time,
+.bracket-page .third-place .game-quarter,
+.bracket-page .fifth-place .game-time,
+.bracket-page .fifth-place .game-quarter,
+.bracket-page .seventh-place .game-time,
+.bracket-page .seventh-place .game-quarter {
+    float:right;
+    text-align:left;
+}
+.bracket-page .ltr .last .game-time,
+.bracket-page .ltr .last .game-quarter,
+.bracket-page .ltr .last .team-score,
+.bracket-page .ctr .last .game-time,
+.bracket-page .ctr .last .game-quarter,
+.bracket-page .ctr .last .team-score,
+.bracket-page .third-place .last .game-time,
+.bracket-page .third-place .last .game-quarter,
+.bracket-page .third-place .last .team-score,
+.bracket-page .fifth-place .last .game-time,
+.bracket-page .fifth-place .last .game-quarter,
+.bracket-page .fifth-place .last .team-score,
+.bracket-page .seventh-place .last .game-time,
+.bracket-page .seventh-place .last .game-quarter,
+.bracket-page .seventh-place .last .team-score {
+    float:right;
+    text-align:right;
+}
+.bracket-page .ltr .winner .team-score,
+.bracket-page .ctr .winner .team-score,
+.bracket-page .third-place .winner .team-score,
+.bracket-page .fifth-place .winner .team-score,
+.bracket-page .seventh-place .winner .team-score {
+    background:url("/application/modules/Group/externals/images/trmt/arrow-left-blue-sm.png") no-repeat scroll 23px center transparent;
+}
+.bracket-page .game-set.has-data {
+    cursor:pointer;
+}
+.bracket-page .game-set.has-data:hover .game-cell {
+    -moz-box-shadow:0 0px 4px 4px rgba(0,
+    0,
+    0,
+    0.05);
+    -webkit-box-shadow:0 0px 4px 4px rgba(0,
+    0,
+    0,
+    0.05);
+    box-shadow:0 0px 4px 4px rgba(0,
+    0,
+    0,
+    0.05);
+}
+.bracket-page .network > span {
+    display:inline-block;
+}
+.bracket-page .network .networks-gray-cbssports,
+.bracket-page .network .networks-gray-espn,
+.bracket-page .network .networks-gray-espn2,
+.bracket-page .network .networks-gray-espn3 {
+    margin-top:5px;
+}
+.bracket-page .network .networks-gray-fox,
+.bracket-page .network .networks-gray-fx,
+.bracket-page .network .networks-gray-lhn,
+.bracket-page .network .networks-gray-trutv {
+    margin-top:3px;
+}
+.bracket-page .network .networks-gray-sprite,
+.bracket-page .network .networks-gray-abc,
+.bracket-page .network .networks-gray-bet,
+.bracket-page .network .networks-gray-bigten,
+.bracket-page .network .networks-gray-cbs,
+.bracket-page .network .networks-gray-cbssports,
+.bracket-page .network .networks-gray-espn,
+.bracket-page .network .networks-gray-espn2,
+.bracket-page .network .networks-gray-espn3,
+.bracket-page .network .networks-gray-espnews,
+.bracket-page .network .networks-gray-espnu,
+.bracket-page .network .networks-gray-fox,
+.bracket-page .network .networks-gray-fx,
+.bracket-page .network .networks-gray-lhn,
+.bracket-page .network .networks-gray-nbc,
+.bracket-page .network .networks-gray-nbcsports,
+.bracket-page .network .networks-gray-tbs,
+.bracket-page .network .networks-gray-tnt,
+.bracket-page .network .networks-gray-trutv {
+    background-image:url('/sites/all/modules/custom/live_data/images/networks-gray-se222215f1d.png');
+    background-repeat:no-repeat;
+}
+.bracket-page .network .networks-gray-abc {
+    background-position:0 0;
+    height:16px;
+    width:17px;
+}
+.bracket-page .network .networks-gray-bet {
+    background-position:0 -31px;
+    height:10px;
+    width:28px;
+}
+.bracket-page .network .networks-gray-bigten {
+    background-position:0 -56px;
+    height:14px;
+    width:29px;
+}
+.bracket-page .network .networks-gray-cbs {
+    background-position:0 -85px;
+    height:17px;
+    width:17px;
+}
+.bracket-page .network .networks-gray-cbssports {
+    background-position:0 -117px;
+    height:9px;
+    width:40px;
+}
+.bracket-page .network .networks-gray-espn {
+    background-position:0 -141px;
+    height:10px;
+    width:40px;
+}
+.bracket-page .network .networks-gray-espn2 {
+    background-position:0 -166px;
+    height:8px;
+    width:40px;
+}
+.bracket-page .network .networks-gray-espn3 {
+    background-position:0 -189px;
+    height:8px;
+    width:40px;
+}
+.bracket-page .network .networks-gray-espnews {
+    background-position:0 -212px;
+    height:9px;
+    width:40px;
+}
+.bracket-page .network .networks-gray-espnu {
+    background-position:0 -236px;
+    height:16px;
+    width:17px;
+}
+.bracket-page .network .networks-gray-fox {
+    background-position:0 -267px;
+    height:13px;
+    width:28px;
+}
+.bracket-page .network .networks-gray-fx {
+    background-position:0 -295px;
+    height:12px;
+    width:22px;
+}
+.bracket-page .network .networks-gray-lhn {
+    background-position:0 -322px;
+    height:13px;
+    width:22px;
+}
+.bracket-page .network .networks-gray-nbc {
+    background-position:0 -350px;
+    height:13px;
+    width:22px;
+}
+.bracket-page .network .networks-gray-nbcsports {
+    background-position:0 -378px;
+    height:19px;
+    width:25px;
+}
+.bracket-page .network .networks-gray-tbs {
+    background-position:0 -412px;
+    height:14px;
+    width:25px;
+}
+.bracket-page .network .networks-gray-tnt {
+    background-position:0 -441px;
+    height:19px;
+    width:19px;
+}
+.bracket-page .network .networks-gray-trutv {
+    background-position:0 -475px;
+    height:11px;
+    width:29px;
+}
+.bracket-page footer#footer {
+    height:60px;
+}
+.theme-ncaa-webview .game-set.has-data {
+    cursor:default;
+}
+.theme-ncaa-webview .game-set.has-data:hover .game-cell {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+.theme-ncaa-webview .game-set.has-data:focus,
+.theme-ncaa-webview .game-set.has-data:active {
+    outline:none;
+}
+.bracket-page {}
+.bracket-page .bracket-ads-250x50 {
+    float:left;
+    width:900px;
+    margin:0 0 0 90px;
+}
+.bracket-page .bracket-ad-250x50 .dfp div {
+    width:250px;
+    height:50px;
+    float:left;
+    margin:4px 35px 10px 0;
+}
+.bracket-page #bracket-top {
+    background:url("/application/modules/Group/externals/images/trmt/bracket-68-top.png");
+    background-position:165px 40px;
+    background-repeat:no-repeat;
+}
+.bracket-page #bracket-bottom {
+    background:url("/application/modules/Group/externals/images/trmt/bracket-68-bottom.png");
+    background-position:165px 40px;
+    background-repeat:no-repeat;
+}
+.bracket-page #rounds {
+    clear:left;
+}
+.bracket-page #rounds .round2 {
+    width:195px;
+    padding:8px 15px 8px 15px;
+}
+.bracket-page #rounds .round3 {
+    width:67px;
+}
+.bracket-page #rounds .round4 {
+    width:70px;
+}
+.bracket-page #rounds .round5 {
+    width:76px;
+}
+.bracket-page #rounds .round6 {
+    width:184px;
+}
+.bracket-page .team-68 .championship .live-top,
+.bracket-page .team-68 .championship .live-bottom,
+.bracket-page .team-68 .third-place .live-top,
+.bracket-page .team-68 .third-place .live-bottom {
+    float:none;
+    width:100%;
+}
+.bracket-page .team-68 .championship .live-top a,
+.bracket-page .team-68 .championship .live-bottom a,
+.bracket-page .team-68 .third-place .live-top a,
+.bracket-page .team-68 .third-place .live-bottom a {
+    margin:auto;
+}
+.bracket-page .team-68 .championship .live-top div,
+.bracket-page .team-68 .championship .live-bottom div,
+.bracket-page .team-68 .third-place .live-top div,
+.bracket-page .team-68 .third-place .live-bottom div {
+    margin:auto;
+}
+.team-68 {}
+.team-68 .ltr .grp-2 {
+    left:4px;
+}
+.team-68 .ltr .grp-3 {
+    left:177px;
+}
+.team-68 .ltr .grp-4 {
+    left:245px;
+}
+.team-68 .ltr .grp-5 {
+    left:310px;
+}
+.team-68 .rtl .grp-2 {
+    right:4px;
+}
+.team-68 .rtl .grp-3 {
+    right:177px;
+}
+.team-68 .rtl .grp-4 {
+    right:245px;
+}
+.team-68 .rtl .grp-5 {
+    right:310px;
+}
+.team-68 .grp-1.pos-01 {
+    left:35px;
+}
+.team-68 .grp-1.pos-02 {
+    left:250px;
+}
+.team-68 .grp-1.pos-03 {
+    right:250px;
+}
+.team-68 .grp-1.pos-04 {
+    right:35px;
+}
+.team-68 .grp-2 {
+    left:0px;
+}
+.team-68 .grp-2.pos-01,
+.team-68 .grp-2.pos-09,
+.team-68 .grp-2.pos-17,
+.team-68 .grp-2.pos-25 {
+    top:-2px;
+}
+.team-68 .grp-2.pos-01.game-md,
+.team-68 .grp-2.pos-01.game-lg,
+.team-68 .grp-2.pos-09.game-md,
+.team-68 .grp-2.pos-09.game-lg,
+.team-68 .grp-2.pos-17.game-md,
+.team-68 .grp-2.pos-17.game-lg,
+.team-68 .grp-2.pos-25.game-md,
+.team-68 .grp-2.pos-25.game-lg {
+    top:16px;
+}
+.team-68 .grp-2.pos-02,
+.team-68 .grp-2.pos-10,
+.team-68 .grp-2.pos-18,
+.team-68 .grp-2.pos-26 {
+    top:81px;
+}
+.team-68 .grp-2.pos-02.game-md,
+.team-68 .grp-2.pos-02.game-lg,
+.team-68 .grp-2.pos-10.game-md,
+.team-68 .grp-2.pos-10.game-lg,
+.team-68 .grp-2.pos-18.game-md,
+.team-68 .grp-2.pos-18.game-lg,
+.team-68 .grp-2.pos-26.game-md,
+.team-68 .grp-2.pos-26.game-lg {
+    top:113px;
+}
+.team-68 .grp-2.pos-03,
+.team-68 .grp-2.pos-11,
+.team-68 .grp-2.pos-19,
+.team-68 .grp-2.pos-27 {
+    top:167px;
+}
+.team-68 .grp-2.pos-03.game-md,
+.team-68 .grp-2.pos-03.game-lg,
+.team-68 .grp-2.pos-11.game-md,
+.team-68 .grp-2.pos-11.game-lg,
+.team-68 .grp-2.pos-19.game-md,
+.team-68 .grp-2.pos-19.game-lg,
+.team-68 .grp-2.pos-27.game-md,
+.team-68 .grp-2.pos-27.game-lg {
+    top:215px;
+}
+.team-68 .grp-2.pos-04,
+.team-68 .grp-2.pos-12,
+.team-68 .grp-2.pos-20,
+.team-68 .grp-2.pos-28 {
+    top:251px;
+}
+.team-68 .grp-2.pos-04.game-md,
+.team-68 .grp-2.pos-04.game-lg,
+.team-68 .grp-2.pos-12.game-md,
+.team-68 .grp-2.pos-12.game-lg,
+.team-68 .grp-2.pos-20.game-md,
+.team-68 .grp-2.pos-20.game-lg,
+.team-68 .grp-2.pos-28.game-md,
+.team-68 .grp-2.pos-28.game-lg {
+    top:315px;
+}
+.team-68 .grp-2.pos-05,
+.team-68 .grp-2.pos-13,
+.team-68 .grp-2.pos-21,
+.team-68 .grp-2.pos-29 {
+    top:340px;
+}
+.team-68 .grp-2.pos-05.game-md,
+.team-68 .grp-2.pos-05.game-lg,
+.team-68 .grp-2.pos-13.game-md,
+.team-68 .grp-2.pos-13.game-lg,
+.team-68 .grp-2.pos-21.game-md,
+.team-68 .grp-2.pos-21.game-lg,
+.team-68 .grp-2.pos-29.game-md,
+.team-68 .grp-2.pos-29.game-lg {
+    top:420px;
+}
+.team-68 .grp-2.pos-06,
+.team-68 .grp-2.pos-14,
+.team-68 .grp-2.pos-22,
+.team-68 .grp-2.pos-30 {
+    top:424px;
+}
+.team-68 .grp-2.pos-06.game-md,
+.team-68 .grp-2.pos-06.game-lg,
+.team-68 .grp-2.pos-14.game-md,
+.team-68 .grp-2.pos-14.game-lg,
+.team-68 .grp-2.pos-22.game-md,
+.team-68 .grp-2.pos-22.game-lg,
+.team-68 .grp-2.pos-30.game-md,
+.team-68 .grp-2.pos-30.game-lg {
+    top:520px;
+}
+.team-68 .grp-2.pos-07,
+.team-68 .grp-2.pos-15,
+.team-68 .grp-2.pos-23,
+.team-68 .grp-2.pos-31 {
+    top:510px;
+}
+.team-68 .grp-2.pos-07.game-md,
+.team-68 .grp-2.pos-07.game-lg,
+.team-68 .grp-2.pos-15.game-md,
+.team-68 .grp-2.pos-15.game-lg,
+.team-68 .grp-2.pos-23.game-md,
+.team-68 .grp-2.pos-23.game-lg,
+.team-68 .grp-2.pos-31.game-md,
+.team-68 .grp-2.pos-31.game-lg {
+    top:622px;
+}
+.team-68 .grp-2.pos-08,
+.team-68 .grp-2.pos-16,
+.team-68 .grp-2.pos-24,
+.team-68 .grp-2.pos-32 {
+    top:595px;
+}
+.team-68 .grp-2.pos-08.game-md,
+.team-68 .grp-2.pos-08.game-lg,
+.team-68 .grp-2.pos-16.game-md,
+.team-68 .grp-2.pos-16.game-lg,
+.team-68 .grp-2.pos-24.game-md,
+.team-68 .grp-2.pos-24.game-lg,
+.team-68 .grp-2.pos-32.game-md,
+.team-68 .grp-2.pos-32.game-lg {
+    top:723px;
+}
+.team-68 .grp-3.pos-01,
+.team-68 .grp-3.pos-05,
+.team-68 .grp-3.pos-09,
+.team-68 .grp-3.pos-13 {
+    top:39px;
+}
+.team-68 .grp-3.pos-01.game-md,
+.team-68 .grp-3.pos-01.game-lg,
+.team-68 .grp-3.pos-05.game-md,
+.team-68 .grp-3.pos-05.game-lg,
+.team-68 .grp-3.pos-09.game-md,
+.team-68 .grp-3.pos-09.game-lg,
+.team-68 .grp-3.pos-13.game-md,
+.team-68 .grp-3.pos-13.game-lg {
+    top:55px;
+}
+.team-68 .grp-3.pos-02,
+.team-68 .grp-3.pos-06,
+.team-68 .grp-3.pos-10,
+.team-68 .grp-3.pos-14 {
+    top:210px;
+}
+.team-68 .grp-3.pos-02.game-md,
+.team-68 .grp-3.pos-02.game-lg,
+.team-68 .grp-3.pos-06.game-md,
+.team-68 .grp-3.pos-06.game-lg,
+.team-68 .grp-3.pos-10.game-md,
+.team-68 .grp-3.pos-10.game-lg,
+.team-68 .grp-3.pos-14.game-md,
+.team-68 .grp-3.pos-14.game-lg {
+    top:242px;
+}
+.team-68 .grp-3.pos-03,
+.team-68 .grp-3.pos-07,
+.team-68 .grp-3.pos-11,
+.team-68 .grp-3.pos-15 {
+    top:382px;
+}
+.team-68 .grp-3.pos-03.game-md,
+.team-68 .grp-3.pos-03.game-lg,
+.team-68 .grp-3.pos-07.game-md,
+.team-68 .grp-3.pos-07.game-lg,
+.team-68 .grp-3.pos-11.game-md,
+.team-68 .grp-3.pos-11.game-lg,
+.team-68 .grp-3.pos-15.game-md,
+.team-68 .grp-3.pos-15.game-lg {
+    top:430px;
+}
+.team-68 .grp-3.pos-04,
+.team-68 .grp-3.pos-08,
+.team-68 .grp-3.pos-12,
+.team-68 .grp-3.pos-16 {
+    top:551px;
+}
+.team-68 .grp-3.pos-04.game-md,
+.team-68 .grp-3.pos-04.game-lg,
+.team-68 .grp-3.pos-08.game-md,
+.team-68 .grp-3.pos-08.game-lg,
+.team-68 .grp-3.pos-12.game-md,
+.team-68 .grp-3.pos-12.game-lg,
+.team-68 .grp-3.pos-16.game-md,
+.team-68 .grp-3.pos-16.game-lg {
+    top:615px;
+}
+.team-68 .grp-4.pos-01,
+.team-68 .grp-4.pos-03,
+.team-68 .grp-4.pos-05,
+.team-68 .grp-4.pos-07 {
+    top:124px;
+}
+.team-68 .grp-4.pos-01.game-md,
+.team-68 .grp-4.pos-01.game-lg,
+.team-68 .grp-4.pos-03.game-md,
+.team-68 .grp-4.pos-03.game-lg,
+.team-68 .grp-4.pos-05.game-md,
+.team-68 .grp-4.pos-05.game-lg,
+.team-68 .grp-4.pos-07.game-md,
+.team-68 .grp-4.pos-07.game-lg {
+    top:140px;
+}
+.team-68 .grp-4.pos-02,
+.team-68 .grp-4.pos-04,
+.team-68 .grp-4.pos-06,
+.team-68 .grp-4.pos-08 {
+    top:467px;
+}
+.team-68 .grp-4.pos-02.game-md,
+.team-68 .grp-4.pos-02.game-lg,
+.team-68 .grp-4.pos-04.game-md,
+.team-68 .grp-4.pos-04.game-lg,
+.team-68 .grp-4.pos-06.game-md,
+.team-68 .grp-4.pos-06.game-lg,
+.team-68 .grp-4.pos-08.game-md,
+.team-68 .grp-4.pos-08.game-lg {
+    top:499px;
+}
+.team-68 .grp-5.pos-01,
+.team-68 .grp-5.pos-02,
+.team-68 .grp-5.pos-03,
+.team-68 .grp-5.pos-04 {
+    top:297px;
+}
+.team-68 .grp-5.pos-01.game-md,
+.team-68 .grp-5.pos-01.game-lg,
+.team-68 .grp-5.pos-02.game-md,
+.team-68 .grp-5.pos-02.game-lg,
+.team-68 .grp-5.pos-03.game-md,
+.team-68 .grp-5.pos-03.game-lg,
+.team-68 .grp-5.pos-04.game-md,
+.team-68 .grp-5.pos-04.game-lg {
+    top:313px;
+}
+#bracket_popup {
+    display:none;
+}
+#bracket-popup {
+    position:fixed;
+    width:625px;
+    height:auto;
+    top:200px;
+    left:50%;
+    margin-left:-312.5px;
+    min-height:331px;
+    z-index:30;
+    -moz-transition:top 0.5s linear;
+    -o-transition:top 0.5s linear;
+    -webkit-transition:top 0.5s linear;
+    transition:top 0.5s linear;
+}
+#bracket-popup .popup-body {
+    position:fixed;
+    background-color:#fff;
+    width:622px;
+    border:solid 1px #b9b9b9;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-box-shadow:0 5px 10px 2px rgba(50,
+    50,
+    50,
+    0.4);
+    -webkit-box-shadow:0 5px 10px 2px rgba(50,
+    50,
+    50,
+    0.4);
+    box-shadow:0 5px 10px 2px rgba(50,
+    50,
+    50,
+    0.4);
+    -moz-transition:height,
+    width,
+    max-height 0.5s linear;
+    -o-transition:height,
+    width,
+    max-height 0.5s linear;
+    -webkit-transition:height,
+    width,
+    max-height 0.5s linear;
+    transition:height,
+    width,
+    max-height 0.5s linear;
+}
+#bracket-popup.scrollFit {}
+#bracket-popup.scrollFit .popup-body {
+    overflow:hidden;
+}
+#bracket-popup.scrollFit.state-win {
+    width:642px;
+}
+#bracket-popup.scrollFit.state-win .popup-body {
+    width:642px;
+}
+#bracket-popup .close-popup {
+    position:absolute;
+    top:-9px;
+    right:-13px;
+    border-radius:50%;
+    width:25px;
+    height:25px;
+    background-color:#c23839;
+    font:bold 19px/21px "TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    color:#FFF;
+    text-align:center;
+    cursor:pointer;
+}
+#bracket-popup .close-popup.hasSectionTabs {
+    top:25px;
+}
+#bracket-popup .close-popup:hover {
+    background-color:#b42223;
+}
+#bracket-popup .section-tabs {
+    text-align:center;
+}
+#bracket-popup .section-tabs .sectionGames li {
+    display:inline-block;
+    background-color:#fff;
+    cursor:pointer;
+    text-transform:uppercase;
+    color:#00375c;
+    font:bold 18px/18px "TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    padding:4px 20px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -moz-border-radius-topright:5px;
+    -webkit-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    border:solid 1px #b9b9b9;
+    margin-right:20px;
+}
+#bracket-popup .section-tabs .sectionGames li.selected {
+    background-color:#b9b9b9;
+    color:#fff;
+}
+#bracket-popup .section-tabs .sectionGames li.selected .score {
+    color:#fff;
+}
+#bracket-popup .section-tabs .sectionGames li .score {
+    color:#000;
+    font:normal 10px/10px Arial,
+    sans-serif;
+    text-align:center;
+}
+#bracket-popup .marketing {
+    position:relative;
+    float:left;
+    width:100%;
+    height:115px;
+    border-top:solid 1px #b9b9b9;
+    background-color:#efedee;
+    bottom:0;
+}
+#bracket-popup .marketing a {
+    display:block;
+}
+#bracket-popup .marketing .unit {
+    display:inline-block;
+    width:300px;
+    height:100px;
+}
+#bracket-popup .marketing .unit.left {
+    float:left;
+    margin:7px 0 7px 7px;
+}
+#bracket-popup .marketing .unit.right {
+    float:right;
+    margin:7px 7px 7px 0;
+}
+#bracket-popup .marketing.matchupAnalysisState {
+    display:none;
+}
+#bracket-popup .region {
+    background-color:#fff;
+    position:relative;
+    display:block;
+    width:100%;
+    float:left;
+    clear:both;
+}
+#bracket-popup .region.status {
+    height:150px;
+    border-top:solid 8px #777882;
+}
+#bracket-popup .region.status a {
+    display:block;
+    outline:none;
+}
+#bracket-popup .region.status .info {
+    position:absolute;
+    width:100%;
+    height:160px;
+}
+#bracket-popup .region.status .info .link-mask {
+    margin:0 auto;
+    width:115px;
+    background-image:url(/sites/all/modules/custom/live_data/images/brackets/popup/link-mask.png);
+    background-position:0;
+    background-clip:content-box;
+    background-size:cover;
+    text-align:center;
+    -webkit-tap-highlight-color:transparent;
+}
+#bracket-popup .region.status .info .listen {
+    text-align:center;
+    text-transform:uppercase;
+    background-color:#787882;
+    color:#FFF;
+    text-align:left;
+    width:110px;
+    line-height:20px;
+    font:bold 14px "TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    text-decoration:none;
+    margin:auto;
+}
+#bracket-popup .region.status .info .listen.live {
+    background-color:#8b071e;
+}
+#bracket-popup .region.status .info .listen.live:hover {
+    background-color:#5a0514;
+}
+#bracket-popup .region.status .info .listen:hover {
+    background-color:#606067;
+    color:#FFF;
+}
+#bracket-popup .region.status .info .header .listen {
+    width:160px;
+}
+#bracket-popup .region.status .info.live .tier.contest .score {
+    color:#000;
+}
+#bracket-popup .region.status .tier {
+    float:left;
+    clear:both;
+    width:100%;
+}
+#bracket-popup .region.status .tier.header {
+    height:27px;
+    width:100%;
+}
+#bracket-popup .region.status .tier.header .header-mask {
+    margin:0 auto;
+    width:160px;
+    height:30px;
+    background-image:url(/sites/all/modules/custom/live_data/images/brackets/popup/watch-mask.png);
+    background-clip:content-box;
+    background-size:cover;
+    text-align:center;
+    -webkit-tap-highlight-color:transparent;
+}
+#bracket-popup .region.status .tier.header span {
+    text-transform:uppercase;
+    font:bold 16px/25px "TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    color:#FFF;
+}
+#bracket-popup .region.status .tier.header span.external {
+    background-image:url(/sites/all/modules/custom/live_data/images/brackets/popup/ext_icon_white.png);
+    background-repeat:no-repeat;
+    background-position:100% 45%;
+    padding-right:18px;
+}
+#bracket-popup .region.status .tier.header .live .listen {
+    background-color:#8b071e;
+}
+#bracket-popup .region.status .tier.header .live .listen:hover {
+    background-color:#5a0514;
+}
+#bracket-popup .region.status .tier.header .live {
+    background-color:#d9103a;
+}
+#bracket-popup .region.status .tier.header .live:hover {
+    background-color:#c10e34;
+}
+#bracket-popup .region.status .tier.header .canceled,
+#bracket-popup .region.status .tier.header .suspended,
+#bracket-popup .region.status .tier.header .postponed,
+#bracket-popup .region.status .tier.header .delayed {
+    background-color:#000;
+}
+#bracket-popup .region.status .tier.header .pre {
+    background-color:#0065a8;
+}
+#bracket-popup .region.status .tier.header a:hover {
+    text-decoration:none;
+}
+#bracket-popup .region.status .tier.feature {
+    height:14px;
+}
+#bracket-popup .region.status .tier.contest {
+    height:60px;
+    margin-top:4px;
+}
+#bracket-popup .region.status .tier.contest .score {
+    width:105px;
+    min-height:20px;
+    font:bold 60px/30px "TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    color:#ababab;
+    text-align:center;
+}
+#bracket-popup .region.status .tier.contest .score.winner {
+    color:#0065a8;
+}
+#bracket-popup .region.status .tier.contest .away {
+    left:140px;
+    top:35px;
+    position:absolute;
+}
+#bracket-popup .region.status .tier.contest .home {
+    right:140px;
+    top:35px;
+    position:absolute;
+}
+#bracket-popup .region.status .tier.contest .game-status {
+    margin:auto;
+    text-align:center;
+    width:110px;
+}
+#bracket-popup .region.status .tier.contest .game-status .time,
+#bracket-popup .region.status .tier.contest .game-status .date,
+#bracket-popup .region.status .tier.contest .game-status .final {
+    margin:0px 0 4px;
+    height:14px;
+}
+#bracket-popup .region.status .tier.contest .game-status .time,
+#bracket-popup .region.status .tier.contest .game-status .date,
+#bracket-popup .region.status .tier.contest .game-status .final,
+#bracket-popup .region.status .tier.contest .game-status .canceled,
+#bracket-popup .region.status .tier.contest .game-status .postponed,
+#bracket-popup .region.status .tier.contest .game-status .delayed {
+    font:normal 13px Arial,
+    sans-serif;
+    display:block;
+    font-weight:bold;
+    text-transform:capitalize;
+}
+#bracket-popup .region.status .tier.contest .game-status .final {
+    color:#333333;
+}
+#bracket-popup .region.status .tier.contest .game-status .date,
+#bracket-popup .region.status .tier.contest .game-status .time {
+    color:#adadad;
+}
+#bracket-popup .region.status .tier.bottom {
+    text-align:center;
+    bottom:12px;
+    position:absolute;
+    width:100%;
+}
+#bracket-popup .region.status .tier.bottom .round {
+    text-transform:uppercase;
+    color:#00375c;
+    font:bold 18px "TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    line-height:18px;
+    height:18px;
+}
+#bracket-popup .region.status .tier.bottom .location {
+    color:#ababab;
+    font:bold 14px/18px Arial,
+    sans-serif;
+    white-space:nowrap;
+    width:100%;
+    height:18px;
+}
+#bracket-popup .region.status .team {
+    display:inline-block;
+    width:150px;
+    margin-top:-8px;
+    z-index:1;
+    position:absolute;
+}
+#bracket-popup .region.status .team.home {
+    right:0;
+}
+#bracket-popup .region.status .team.away {
+    left:0;
+}
+#bracket-popup .region.status .team .flag {
+    position:relative;
+    width:100px;
+    height:112px;
+    background:transparent url(/sites/all/modules/custom/live_data/images/brackets/popup/banner.png) no-repeat;
+    margin:0 auto;
+}
+#bracket-popup .region.status .team .flag .logo {
+    position:relative;
+    width:70px;
+    height:70px;
+    margin:15px;
+}
+#bracket-popup .region.status .team .school {
+    text-align:center;
+    width:100%;
+    font:normal 12px/12px Arial,
+    sans-serif;
+}
+#bracket-popup .region.status .team h2 {
+    font:inherit;
+    margin-bottom:2px;
+}
+#bracket-popup .region.status .team a {
+    font:inherit;
+    font-weight:bold;
+    color:#0079ff;
+}
+#bracket-popup .region.status .team a:hover {
+    text-decoration:none;
+    color:#0061cc;
+}
+#bracket-popup .region.status .team a .seed {
+    display:inline;
+    color:#000;
+    font:inherit;
+    font-weight:normal;
+}
+#bracket-popup .region.status .network {
+    height:33px;
+    line-height:33px;
+}
+#bracket-popup .region.status .network > span {
+    display:inline-block;
+    vertical-align:middle;
+}
+#bracket-popup .region.status .network .networks-med-sprite,
+#bracket-popup .region.status .network .networks-med-abc,
+#bracket-popup .region.status .network .networks-med-bet,
+#bracket-popup .region.status .network .networks-med-bigten,
+#bracket-popup .region.status .network .networks-med-cbs,
+#bracket-popup .region.status .network .networks-med-cbssports,
+#bracket-popup .region.status .network .networks-med-espn,
+#bracket-popup .region.status .network .networks-med-espn2,
+#bracket-popup .region.status .network .networks-med-espn3,
+#bracket-popup .region.status .network .networks-med-espnews,
+#bracket-popup .region.status .network .networks-med-espnu,
+#bracket-popup .region.status .network .networks-med-fox,
+#bracket-popup .region.status .network .networks-med-fx,
+#bracket-popup .region.status .network .networks-med-lhn,
+#bracket-popup .region.status .network .networks-med-nbc,
+#bracket-popup .region.status .network .networks-med-nbcsports,
+#bracket-popup .region.status .network .networks-med-tbs,
+#bracket-popup .region.status .network .networks-med-tnt,
+#bracket-popup .region.status .network .networks-med-trutv {
+    background-image:url('/sites/all/modules/custom/live_data/images/networks-med-s3a3e9a197c.png');
+    background-repeat:no-repeat;
+}
+#bracket-popup .region.status .network .networks-med-abc {
+    background-position:0 0;
+    height:29px;
+    width:29px;
+}
+#bracket-popup .region.status .network .networks-med-bet {
+    background-position:0 -44px;
+    height:21px;
+    width:63px;
+}
+#bracket-popup .region.status .network .networks-med-bigten {
+    background-position:0 -80px;
+    height:25px;
+    width:53px;
+}
+#bracket-popup .region.status .network .networks-med-cbs {
+    background-position:0 -120px;
+    height:27px;
+    width:31px;
+}
+#bracket-popup .region.status .network .networks-med-cbssports {
+    background-position:0 -162px;
+    height:16px;
+    width:65px;
+}
+#bracket-popup .region.status .network .networks-med-espn {
+    background-position:0 -193px;
+    height:15px;
+    width:59px;
+}
+#bracket-popup .region.status .network .networks-med-espn2 {
+    background-position:0 -223px;
+    height:13px;
+    width:66px;
+}
+#bracket-popup .region.status .network .networks-med-espn3 {
+    background-position:0 -251px;
+    height:14px;
+    width:67px;
+}
+#bracket-popup .region.status .network .networks-med-espnews {
+    background-position:0 -280px;
+    height:16px;
+    width:65px;
+}
+#bracket-popup .region.status .network .networks-med-espnu {
+    background-position:0 -311px;
+    height:29px;
+    width:30px;
+}
+#bracket-popup .region.status .network .networks-med-fox {
+    background-position:0 -355px;
+    height:21px;
+    width:46px;
+}
+#bracket-popup .region.status .network .networks-med-fx {
+    background-position:0 -391px;
+    height:20px;
+    width:36px;
+}
+#bracket-popup .region.status .network .networks-med-lhn {
+    background-position:0 -426px;
+    height:22px;
+    width:36px;
+}
+#bracket-popup .region.status .network .networks-med-nbc {
+    background-position:0 -463px;
+    height:26px;
+    width:43px;
+}
+#bracket-popup .region.status .network .networks-med-nbcsports {
+    background-position:0 -504px;
+    height:28px;
+    width:35px;
+}
+#bracket-popup .region.status .network .networks-med-tbs {
+    background-position:0 -547px;
+    height:28px;
+    width:49px;
+}
+#bracket-popup .region.status .network .networks-med-tnt {
+    background-position:0 -590px;
+    height:27px;
+    width:27px;
+}
+#bracket-popup .region.status .network .networks-med-trutv {
+    background-position:0 -632px;
+    height:19px;
+    width:47px;
+}
+#bracket-popup .region.gamecenter {
+    margin-top:5px;
+    height:50px;
+}
+#bracket-popup .region.gamecenter a {
+    display:block;
+}
+#bracket-popup .region.gamecenter .stripe {
+    height:45px;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    background:#0064a6;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjRhNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY0JSIgc3RvcC1jb2xvcj0iIzA0NTU4YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZTI0MzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top,
+    #0064a6 0%,
+    #04558b 64%,
+    #0e2432 100%);
+    background:-webkit-gradient(linear,
+    left top,
+    left bottom,
+    color-stop(0%,
+    #0064a6),
+    color-stop(64%,
+    #04558b),
+    color-stop(100%,
+    #0e2432));
+    background:-webkit-linear-gradient(top,
+    #0064a6 0%,
+    #04558b 64%,
+    #0e2432 100%);
+    background:-o-linear-gradient(top,
+    #0064a6 0%,
+    #04558b 64%,
+    #0e2432 100%);
+    background:-ms-linear-gradient(top,
+    #0064a6 0%,
+    #04558b 64%,
+    #0e2432 100%);
+    background:linear-gradient(to bottom,
+    #0064a6 0%,
+    #04558b 64%,
+    #0e2432 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0064a6',
+    endColorstr='#0e2432',
+    GradientType=0);
+}
+#bracket-popup .region.gamecenter .link.highlights,
+#bracket-popup .region.gamecenter .link.story {
+    width:165px;
+    float:left;
+    font:bold 17px/45px "TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    text-transform:uppercase;
+}
+#bracket-popup .region.gamecenter .link.highlights a,
+#bracket-popup .region.gamecenter .link.story a {
+    color:#e0e0e0;
+    display:block;
+}
+#bracket-popup .region.gamecenter .link.highlights a:hover,
+#bracket-popup .region.gamecenter .link.story a:hover {
+    text-decoration:none;
+    color:#FFF;
+}
+#bracket-popup .region.gamecenter .highlights {
+    text-align:left;
+}
+#bracket-popup .region.gamecenter .highlights a {
+    margin-left:25px;
+}
+#bracket-popup .region.gamecenter .highlights a.external {
+    background-image:url(/sites/all/modules/custom/live_data/images/brackets/popup/ext_icon_grey.png);
+    background-repeat:no-repeat;
+    background-position:100% 45%;
+    padding-right:18px;
+}
+#bracket-popup .region.gamecenter .highlights a.external:hover {
+    background-image:url(/sites/all/modules/custom/live_data/images/brackets/popup/ext_icon_white.png);
+}
+#bracket-popup .region.gamecenter .story {
+    text-align:right;
+}
+#bracket-popup .region.gamecenter .story a {
+    margin-right:25px;
+}
+#bracket-popup .region.gamecenter .story a.external {
+    background-image:url(/sites/all/modules/custom/live_data/images/brackets/popup/ext_icon_grey.png);
+    background-repeat:no-repeat;
+    background-position:100% 45%;
+    padding-right:18px;
+}
+#bracket-popup .region.gamecenter .story a.external:hover {
+    background-image:url(/sites/all/modules/custom/live_data/images/brackets/popup/ext_icon_white.png);
+}
+#bracket-popup .region.gamecenter .marquee {
+    width:290px;
+    height:45px;
+    float:left;
+}
+#bracket-popup .region.gamecenter .marquee .logo {
+    display:block;
+    margin:0 auto;
+    width:119px;
+    height:20px;
+    margin-top:12px;
+    background:transparent url(/sites/all/modules/custom/brackets/bracket_engine/images/gamecenter-logo-2018.png) no-repeat;
+}
+#bracket-popup .region.recap {
+    height:150px;
+    border-top:solid 1px #b9b9b9;
+    padding:10px 0;
+    background-color:#efedee;
+}
+#bracket-popup .region.recap a {
+    display:block;
+}
+#bracket-popup .region.recap .thumbnail {
+    position:relative;
+    overflow:hidden;
+    float:left;
+    width:312px;
+    height:150px;
+    background:transparent;
+    border:solid 8px #FFF;
+    margin:0 15px 0 7px;
+    -moz-box-shadow:0 0 6px rgba(1,
+    2,
+    2,
+    0.15);
+    -webkit-box-shadow:0 0 6px rgba(1,
+    2,
+    2,
+    0.15);
+    box-shadow:0 0 6px rgba(1,
+    2,
+    2,
+    0.15);
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+#bracket-popup .region.recap .thumbnail img {
+    width:300px;
+    height:169px;
+    margin-top:-13.5px;
+    margin-left:-2px;
+    display:block;
+}
+#bracket-popup .region.recap .video-play {
+    background-image:url("/dr/ncaa/ncaa7/release/sites/all/modules/custom/ncaa_tiles/video/images/video-sprite-play.png");
+    display:inline-block;
+    width:46px;
+    height:46px;
+    background-position:-141px top;
+    position:absolute;
+    bottom:15px;
+    right:15px;
+}
+#bracket-popup .region.recap .story {
+    float:left;
+    width:280px;
+}
+#bracket-popup .region.recap .story a:hover {
+    text-decoration:none;
+}
+#bracket-popup .region.recap .story h2 {
+    font:bold 23px/22px "TechwoodSlabW04",
+    "Rockwell",
+    "Georgia",
+    serif;
+    margin:10px 0;
+    color:#161616;
+}
+#bracket-popup .region.recap .story p {
+    font:normal 14px/15px Arial,
+    sans-serif;
+}
+#bracket-popup .region.sponsor iframe {
+    border:none;
+    width:100%;
+    height:140px;
+}
+#bracket-popup .region.matchup {
+    color:#2B2A2A;
+}
+#bracket-popup .region.matchup .matchup__header {
+    position:relative;
+    background:#062648;
+    vertical-align:middle;
+    padding:15px 20px;
+}
+#bracket-popup .region.matchup .matchup__header__title {
+    display:inline-block;
+    font-family:"Geogrotesque",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-size:26px;
+    font-weight:500;
+    color:#FFFFFF;
+    line-height:26px;
+}
+#bracket-popup .region.matchup .matchup__header__sponsor {
+    display:inline-block;
+    position:absolute;
+    top:50%;
+    right:20px;
+    transform:translateY(-50%);
+}
+#bracket-popup .region.matchup .matchup__header__sponsor img {
+    margin-top:5px;
+    width:156px;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles {
+    margin-bottom:27px;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile {
+    display:none;
+    width:170px;
+    height:67px;
+    margin-top:12px;
+    padding:5px 20px 0 20px;
+    text-align:center;
+    border-right:1px solid #E3E3E3;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile:first-child {
+    padding:5px 20px 0 10px;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile:last-child {
+    padding:5px 10px 0 20px;
+    border-right:0;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__title {
+    font-family:"Geogrotesque",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-size:20px;
+    line-height:20px;
+    font-weight:500;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__desc {
+    font-family:"HelveticaNeue",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-size:9px;
+    line-height:9px;
+    margin-top:1px;
+    margin-bottom:6px;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic {
+    font-size:0;
+    position:relative;
+    width:170px;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__bg-wrap,
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    height:30px;
+    width:170px;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap {
+    z-index:5;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__away,
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__home {
+    position:relative;
+    font-family:"Geogrotesque",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-size:18px;
+    line-height:30px;
+    max-height:30px;
+    color:#646464;
+    display:inline-block;
+    width:49%;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__away.leading,
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__home.leading {
+    color:#FFFFFF;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__away {
+    text-align:right;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__away__score {
+    display:inline-block;
+    margin-right:12px;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__away__icon {
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform:translateY(-50%);
+    display:none;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__away.leading img {
+    display:inherit;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__home {
+    text-align:left;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__home__score {
+    display:inline-block;
+    margin-left:12px;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__home__icon {
+    position:absolute;
+    top:50%;
+    right:5px;
+    transform:translateY(-50%);
+    display:none;
+}
+#bracket-popup .region.matchup .matchup__stats-tiles__tile__infographic__info-wrap__home.leading img {
+    display:inherit;
+}
+#bracket-popup .region.matchup .matchup__stats-row {
+    width:590px;
+    margin:0 auto 20px auto;
+}
+#bracket-popup .region.matchup .matchup__stats-row__away-rank,
+#bracket-popup .region.matchup .matchup__stats-row__home-rank {
+    display:inline-block;
+    font-family:"Geogrotesque",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-size:16px;
+    font-weight:500;
+    width:45px;
+    line-height:26px;
+    max-height:26px;
+    vertical-align:middle;
+    opacity:0.4;
+}
+#bracket-popup .region.matchup .matchup__stats-row__away-rank span,
+#bracket-popup .region.matchup .matchup__stats-row__home-rank span {
+    font-size:12px;
+}
+#bracket-popup .region.matchup .matchup__stats-row__away-rank.leading,
+#bracket-popup .region.matchup .matchup__stats-row__home-rank.leading {
+    opacity:1;
+}
+#bracket-popup .region.matchup .matchup__stats-row__home-rank {
+    text-align:right;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic {
+    width:494px;
+    height:26px;
+    line-height:26px;
+    vertical-align:middle;
+    display:inline-block;
+    position:relative;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic__bg-wrap,
+#bracket-popup .region.matchup .matchup__stats-row__infographic__info-wrap {
+    width:494px;
+    height:26px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic__indicator {
+    width:22px;
+    height:26px;
+    display:none;
+    position:absolute;
+    top:0;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic__indicator.leading--away {
+    display:block;
+    left:0;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic__indicator.leading--home {
+    display:block;
+    right:0;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic__info-wrap {
+    z-index:5;
+    text-align:center;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic__label {
+    display:inline-block;
+    font-family:"Geogrotesque",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-weight:500;
+    font-size:12px;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic__away-score,
+#bracket-popup .region.matchup .matchup__stats-row__infographic__home-score {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-family:"Geogrotesque",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-size:12px;
+    color:#646464;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic__away-score {
+    left:30px;
+}
+#bracket-popup .region.matchup .matchup__stats-row__infographic__home-score {
+    right:30px;
+}
+#bracket-popup .region.matchup .matchup__footer {
+    text-align:center;
+}
+#bracket-popup .region.matchup .matchup__footer__button {
+    display:inline-block;
+    width:197px;
+    height:40px;
+    color:#FFFFFF;
+    background:#0091EA;
+    border-radius:20px;
+    margin:-4px auto 16px auto;
+    cursor:pointer;
+    font-family:"Geogrotesque",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-size:14px;
+    font-weight:500;
+    line-height:40px;
+    vertical-align:middle;
+}
+#ncaa-share-hanger {
+    background-color:#efedee;
+    width:21px;
+    height:98px;
+    padding:5px;
+    position:absolute;
+    top:350px;
+    left:-31px;
+}
+#ncaa-share-hanger li {
+    margin-bottom:5px;
+}
+#ncaa-share-hanger a {
+    text-indent:-119988px;
+    overflow:hidden;
+    text-align:left;
+    text-transform:capitalize;
+}
+#ncaa-share-hanger a.sharebutton {
+    width:21px;
+    height:21px;
+    display:block;
+    background:url(/dr/ncaa/ncaa7/release/sites/all/modules/custom/ncaa_social/ncaa_social_hanger/images/sharebar_sprite.png);
+}
+#ncaa-share-hanger a.sharebutton.facebook {
+    background-position:-11px -11px;
+}
+#ncaa-share-hanger a.sharebutton.facebook:hover {
+    background-position:-51px -11px;
+}
+#ncaa-share-hanger a.sharebutton.twitter {
+    background-position:-11px -36px;
+}
+#ncaa-share-hanger a.sharebutton.twitter:hover {
+    background-position:-51px -36px;
+}
+#ncaa-share-hanger a.sharebutton.googleplus {
+    background-position:-11px -61px;
+}
+#ncaa-share-hanger a.sharebutton.googleplus:hover {
+    background-position:-51px -61px;
+}
+#ncaa-share-hanger a.sharebutton.email {
+    background-position:-11px -86px;
+}
+#ncaa-share-hanger a.sharebutton.email:hover {
+    background-position:-51px -86px;
+}
+#ncaa-share-hanger a.sharebutton.print {
+    background-position:-11px -111px;
+}
+#ncaa-share-hanger a.sharebutton.print:hover {
+    background-position:-51px -111px;
+}
+div.gig-share-sidebar {
+    display:none;
+}
+div.gig-share input[type="text"],
+div.gig-share input[type="password"],
+div.gig-share input[type="email"],
+div.gig-share textarea,
+div.gig-share select {
+    margin:0;
+    min-height:0;
+}
+div.gig-share table th,
+div.gig-share table td {
+    line-height:inherit;
+}

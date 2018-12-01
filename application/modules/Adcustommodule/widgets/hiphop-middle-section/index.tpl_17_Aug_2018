@@ -1,0 +1,281 @@
+
+<?php $href = $this->url(array('module' => 'adcustommodule', 'controller' => 'index', 'action' => 'tournament')); ?>
+
+
+<style type="text/css">
+
+.ad_hiphop_ul {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.ad_hiphop_ul li {
+    display: inline-block;
+    width: 31.5%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.ad_store_image img {
+    width: 100%;
+	height: 130px;
+}
+
+.ad_hiphop_ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+#global_content .ad_store_info .ad_store_title {
+    margin-bottom: 0;
+	font-size:14px;
+	font-weight:600;
+	height:22px;
+}
+
+.ad_store_desc {
+    font-size: 13px;
+}
+
+.ad_content_category {
+    float: right;
+}
+
+.ad_content_username {
+    margin-right: 5px;
+}
+
+.ad_store_links a:before {
+    content: "";
+    background-image: url('/public/admin/w-star.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 44px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.ad_store_links a{
+	font-weight:bold;
+}
+
+.sd_feed_header .sd_feed_headersection.sd_feed_worldwide{
+	margin-right:-5.5% !important;
+}
+
+.sd_feed_header .sd_feed_headersection.sd_feed_mostpopular{
+	width: 143px;
+}
+
+</style>
+
+<?php $this->headLink()->prependStylesheet($this->layout()->staticBaseUrl . 'application/modules/Activity/externals/styles/custom.css'); ?>
+
+
+
+<div class="hiphop_page_wrapper">
+
+    <div class='sd_feed_header'>
+		<div class='sd_feed_headersection sd_feed_mostpopular'>
+			<a href='javascript:void(0);' class="sd_active_pouplar"><?php echo $this->translate("Hip-hop"); ?></a>
+			<ul>
+			<li class='active'>
+			<a href='javascript:void(0);'><?php echo $this->translate("Hip-hop"); ?></a>
+			</li>
+			<li>
+			<a href='javascript:void(0);'><?php echo $this->translate("New"); ?></a>
+			</li>
+			<li>
+			<a href='javascript:void(0);'><?php echo $this->translate("Classic"); ?></a>
+			</li>
+			</ul>
+		</div>
+		<div class='sd_feed_headersection sd_feed_worldwide'>
+		<a href="javascript:void(0);" onclick='Smoothbox.open("./adcustommodule/location/edit") '><?php echo $this->translate("Worldwide"); ?></a>
+		<!-- <a href='javascript:void(0);' onclick='showLocationFilter(this);'><?php echo $this->translate("Worldwide"); ?></a> -->
+		<div class='sd_feed_location_filter' style='display: none;'>
+		<input type='text' id='location' name='location'/>
+		<input type='hidden' id='locationParams' name='locationParams'/>
+		<div id='map' style="position: relative; height: 270px; width: 270px; overflow: hidden;"></div>
+		</div>
+		</div>
+		<div class='sd_feed_headersection sd_feed_options'>
+			<a href='javascript:void(0);'><img src="/public/admin/health-monitor.png" /></a>
+			<a href='javascript:void(0);' onclick='loadAllFeed(this);'><img src="/public/admin/all_icon.png" /></a>       
+			<a href='javascript:void(0);'><img src="/public/admin/social_network.png" /></a>
+			<a href='javascript:void(0);'> <?php echo $this->translate('33k'); ?></a> 			
+		</div>
+	</div>
+			
+	<div class="sd_feed_header_seperator"></div>
+
+	<div id="activity-feed"></div>		
+	<div class="ad_store_top_section">
+	
+		<ul class="ad_hiphop_ul">
+		 <?php 
+		  if($this->ispopularvideoexist == 1) : 
+		foreach( $this->paginator as $item ): 
+		$secondcategory= 'Hip Hop';
+		
+        $embedded = "";
+        if ($item->status == 1) {
+            $embedded = $item->getRichContent(true);
+        }
+        if ($item->type == 'upload' && $item->status == 1) {
+            if (!empty($item->file_id)) {
+                $storage_file = Engine_Api::_()->getItem('storage_file', $item->file_id);
+                if ($storage_file) {
+                    $video_location = $storage_file->map();
+                    $video_extension = $storage_file->extension;
+                }
+            }
+        }
+		?>
+        <li class="ad_store_li">
+		
+          <div class="ad_store_image">
+			<?php if( $item->type == 'upload' ): ?>
+			<div id="video_embed" class="video_embed">
+			<?php echo $this->htmlLink($item->getHref(), $this->itemPhoto($item, 'thumb.normal'), array('class' => 'thumb')) ?>
+			</div>
+			<?php else: ?>
+			<div class="video_embed">
+			<?php echo $embedded ?>
+			</div>
+			<?php endif; ?>
+		  </div>
+		
+		   
+          <div class="ad_store_info"> 
+		  
+            <div class="ad_store_title_wrapper">
+			<h3 class="ad_store_title">
+              <?php $content = $item->getTitle(); 
+			 
+			    $pos=strpos($content, ' ', 20);
+				$title = substr($content,0,$pos ); 
+				
+				echo $this->htmlLink($item->getHref(), $title); 
+			   ?>
+			</h3>
+           </div>
+		   
+		   <p class="ad_store_desc">
+					<span class="ad_content_username">  
+						<?php
+							$owner = $item->getOwner();
+							echo $this->translate('%1$s', $this->htmlLink($owner->getHref(), $owner->getTitle()));
+						?> 
+					  </span>
+					<span class="ad_content_category">  
+					    <?php if(!empty($secondcategory)) {
+							    $scat = str_replace(" ","-",$secondcategory);
+								$secondcat = strtolower($scat);
+								
+							    echo '<a href="pages/'.$secondcat.'">'.$secondcategory.'</a>';
+						   }else{
+							   echo "Update";
+						   } ?>
+						 </span>
+		   </p>	
+          </div>
+        </li>
+      <?php endforeach; 
+	   else: ?>
+	     <div class="tip">
+		   <span> <?php echo $this->translate('No videos Posted yet!'); ?> </span>
+		 </div>
+	   <?php endif; ?>
+    </ul>
+</div>		
+         
+		<div class="ad_store_links">
+			<a href="javascript:void(0);" class="ad_content_vote">Vote Now</a>
+        </div> 
+
+	</div>
+
+	<div class="ad_store_bottom_section">
+
+		<ul class="ad_hiphop_ul">
+		 <?php 
+		  if($this->isrecentvideoexist == 1) : 
+		foreach( $this->ppaginator as $item ): 
+		$secondcategory= 'Hip Hop';
+		
+        $embedded = "";
+        if ($item->status == 1) {
+            $embedded = $item->getRichContent(true);
+        }
+        if ($item->type == 'upload' && $item->status == 1) {
+            if (!empty($item->file_id)) {
+                $storage_file = Engine_Api::_()->getItem('storage_file', $item->file_id);
+                if ($storage_file) {
+                    $video_location = $storage_file->map();
+                    $video_extension = $storage_file->extension;
+                }
+            }
+        }
+		?>
+        <li class="ad_store_li">
+		
+          <div class="ad_store_image">
+			<?php if( $item->type == 'upload' ): ?>
+			<div id="video_embed" class="video_embed">
+			<?php echo $this->htmlLink($item->getHref(), $this->itemPhoto($item, 'thumb.normal'), array('class' => 'thumb')) ?>
+			</div>
+			<?php else: ?>
+			<div class="video_embed">
+			<?php echo $embedded ?>
+			</div>
+			<?php endif; ?>
+		  </div>
+		
+		   
+          <div class="ad_store_info"> 
+		  
+            <div class="ad_store_title_wrapper">
+			<h3 class="ad_store_title">
+              <?php $content = $item->getTitle(); 
+			 
+			    $pos=strpos($content, ' ', 20);
+				$title = substr($content,0,$pos ); 
+				
+				echo $this->htmlLink($item->getHref(), $title); 
+			   ?>
+			</h3>
+           </div>
+		   
+		   <p class="ad_store_desc">
+					<span class="ad_content_username">  
+						<?php
+							$owner = $item->getOwner();
+							echo $this->translate('%1$s', $this->htmlLink($owner->getHref(), $owner->getTitle()));
+						?> 
+					  </span>
+					<span class="ad_content_category">  
+					    <?php if(!empty($secondcategory)) {
+							    $scat = str_replace(" ","-",$secondcategory);
+								$secondcat = strtolower($scat);
+								
+							    echo '<a href="pages/'.$secondcat.'">'.$secondcategory.'</a>';
+						   }else{
+							   echo "Update";
+						   } ?>
+						 </span>
+		   </p>	
+          </div>
+        </li>
+      <?php endforeach; 
+	   else: ?>
+	     <div class="tip">
+		   <span> <?php echo $this->translate('No videos Posted yet!'); ?> </span>
+		 </div>
+	   <?php endif; ?>
+    </ul>
+
+	</div>
+
+</div>

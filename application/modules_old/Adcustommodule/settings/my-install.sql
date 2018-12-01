@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('adcustommodule', 'Ad Custom Module', 'This is custom module developed by Anil for custom work.', '4.9.0', 1, 'extra') ;

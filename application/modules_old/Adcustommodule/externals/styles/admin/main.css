@@ -1,0 +1,23 @@
+
+#global_page_activity-admin-categories-movies .tabs ul li,
+#global_page_activity-admin-categories-gaming .tabs ul li,
+#global_page_activity-admin-categories-school .tabs ul li,
+#global_page_activity-admin-categories-kids .tabs ul li,
+#global_page_activity-admin-categories-women .tabs ul li,
+#global_page_activity-admin-categories-photo .tabs ul li,
+#global_page_activity-admin-categories-music .tabs ul li,
+#global_page_activity-admin-categories-sports .tabs ul li,
+#global_page_activity-admin-categories-fashion .tabs ul li,
+#global_page_activity-admin-categories-spiritual .tabs ul li,
+#global_page_activity-admin-categories-sciandtech .tabs ul li,
+#global_page_activity-admin-categories-adults .tabs ul li,
+#global_page_activity-admin-categories-index .tabs ul li,
+#global_page_activity-admin-categories-love .tabs ul li,
+#global_page_activity-admin-categories-people .tabs ul li,
+#global_page_activity-admin-categories-health .tabs ul li,
+#global_page_activity-admin-categories-food .tabs ul li,
+#global_page_activity-admin-categories-arts .tabs ul li,
+#global_page_activity-admin-categories-hot .tabs ul li
+ {
+  margin-bottom: 20px;
+}

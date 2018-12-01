@@ -1,0 +1,73 @@
+{
+  "type": "widget",
+  "name": "sd-feed",
+  "version": "4.9.4",
+  "revision": null,
+  "path": "application\/widgets\/sd-feed",
+  "repository": null,
+  "sku": null,
+  "date": "Thu, 28 Dec 2017 12:39:40 +0000",
+  "title": "SD Activity Feed",
+  "description": "SD Activity Feed",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    ""
+  ],
+  "meta": {
+    "date": "Thu, 28 Dec 2017 12:39:40 +0000",
+    "title": "SD Activity Feed",
+    "description": "SD Activity Feed",
+    "developer": null,
+    "authors": [
+      ""
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/widgets\/sd-feed": {
+      "type": "directory",
+      "path": "application\/widgets\/sd-feed",
+      "structure": [
+        {
+          "path": "index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 35,
+          "sha1": "7d85db8c7dde91138ac74310548a470aed8ba545"
+        },
+        {
+          "path": "Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 128,
+          "sha1": "772f2972d0a86cf1db6af4632445212d709aca8b"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 648,
+          "sha1": "2faa47d8fad70a652b31a5c054947797b39a89b1"
+        }
+      ]
+    }
+  }
+}

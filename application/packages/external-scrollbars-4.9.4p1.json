@@ -1,0 +1,62 @@
+{
+  "type": "external",
+  "name": "scrollbars",
+  "version": "4.9.4p1",
+  "revision": "9747",
+  "path": "externals\/scrollbars",
+  "repository": null,
+  "sku": null,
+  "date": "Mon, 28 Aug 2017 16:46:10 +0000",
+  "title": "Scrollbars",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Mon, 28 Aug 2017 16:46:10 +0000",
+    "title": "Scrollbars",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/scrollbars": {
+      "type": "directory",
+      "path": "externals\/scrollbars",
+      "structure": [
+        {
+          "path": "scrollbars.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 14050,
+          "sha1": "eb4b57f6b182223e38b574a9ac2cdd8dd7843aba"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 383,
+          "sha1": "9407fae4f02d9666c3714fef15cc508efe64e07d"
+        }
+      ]
+    }
+  }
+}

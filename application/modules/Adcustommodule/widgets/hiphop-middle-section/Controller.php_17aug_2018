@@ -1,0 +1,75 @@
+<?php
+
+class Adcustommodule_Widget_HiphopMiddleSectionController extends Engine_Content_Widget_Abstract
+{
+  public function indexAction()
+  {
+    $this->view->viewer = $viewer = Engine_Api::_()->user()->getViewer();
+	
+    $type = 'home';
+
+    $this->view->allCategories = Engine_Api::_()->getDbtable('categories', 'activity')->getAllCategories(0,$type);
+
+	$attachmenttable = Engine_Api::_()->getDbtable('attachments', 'activity');
+    $attachName = $attachmenttable->info('name');
+	
+	$actiontable = Engine_Api::_()->getDbtable('actions', 'activity');
+	$actionName = $actiontable->info('name');
+	
+	$wcselect = 
+	     $actiontable->select()
+        ->setIntegrityCheck(false)
+        ->from($actionName,NULL)
+        ->joinLeft($attachName, "$actionName.action_id = $attachName.action_id")
+        ->where($attachName.'.type = ?', 'video')
+        ->where($actionName.'.subcategory_id = ?', '4')
+		->group('id');
+		
+	$results = $attachmenttable->fetchAll($wcselect);
+	
+	$videosarray = array();
+	
+	foreach($results as $rec) {
+		$videosarray[] = $rec->id;
+	}
+	
+	
+	$table = Engine_Api::_()->getItemTable('video');
+    $video = Engine_Api::_()->getApi('core', 'video');
+    $params['search'] = 1;
+	
+	$this->view->ispopularvideoexist = 0;
+	$this->view->isrecentvideoexist = 0;
+	
+	if(count($videosarray) > 0) {
+		
+		$select = $video->getItemsSelect($table->select(), $params);
+		$select->where('status = ?', 1)
+		->where('video_id IN (?)',$videosarray)
+		  ->order('view_count DESC');
+		$authorisedSelect = $video->getAuthorisedSelect($select);
+		$this->view->paginator = $paginator = Zend_Paginator::factory($authorisedSelect);
+
+		// Set item count per page and current page number
+		$paginator->setItemCountPerPage($this->_getParam('itemCountPerPage', 9));
+		$paginator->setCurrentPageNumber($this->_getParam('page', 1));
+	    $this->view->ispopularvideoexist = 1;
+	}
+	
+	if(count($videosarray) > 0) {
+		
+		$sselect = $video->getItemsSelect($table->select(), $params);
+		$sselect->where('status = ?', 1)
+		->where('video_id IN (?)',$videosarray)
+		  ->order('creation_date DESC');
+		$authoriseSelect = $video->getAuthorisedSelect($sselect);
+		$this->view->ppaginator = $ppaginator = Zend_Paginator::factory($authoriseSelect);
+
+		// Set item count per page and current page number
+		$ppaginator->setItemCountPerPage($this->_getParam('itemCountPerPage', 6));
+		$ppaginator->setCurrentPageNumber($this->_getParam('page', 1));
+	    $this->view->isrecentvideoexist = 1;
+	}
+	
+  }
+}

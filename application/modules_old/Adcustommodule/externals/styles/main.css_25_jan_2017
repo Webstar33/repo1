@@ -1,0 +1,250 @@
+
+.ad_green {
+    padding: 5px;
+    background: #008000;
+    border-radius: 100%;
+    position: relative;
+    float: right;
+    margin-top: -15px;
+    border: 3px solid #fff;
+}
+
+.ad_grey {
+    padding: 5px;
+    background: #6b6f6b;
+    border-radius: 100%;
+    position: relative;
+    float: right;
+    margin-top: -15px;
+    border: 3px solid #fff;
+}
+
+
+#activity-feed .feed_item_photo img {
+    border-radius: 100%;
+}
+
+
+/*** Left sidebar mini menu CSS start ****/
+
+.layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu>ul>li>a.core_mini_profile {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0px solid;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu>ul>li>a.core_mini_profile>img.thumb_icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    margin: 0;
+}
+
+.layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu > ul > li a.core_mini_admin.show_icons, .layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu > ul > li a.core_mini_messages.show_icons, .layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu > ul > li a.core_mini_settings.show_icons, .layout_sd_user_photo .updates_pulldown_active>a.core_mini_update.show_icons, .layout_sd_user_photo .updates_pulldown>a.core_mini_update.show_icons {
+    width: 22px;
+    height: 22px;
+}
+
+.layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu > ul > li a.core_mini_admin.show_icons:before, .layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu > ul > li a.core_mini_messages.show_icons:before, .layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu > ul > li a.core_mini_settings.show_icons:before, .layout_sd_user_photo .updates_pulldown_active>a.core_mini_update.show_icons:before, .layout_sd_user_photo .updates_pulldown>a.core_mini_update.show_icons:before {
+    font-size: 20px;
+    border: 0px solid;   
+    padding-top: 0px;
+}
+
+.layout_sd_user_photo .updates_pulldown>a.core_mini_update,.layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu>ul>li>a {
+    padding: 0;
+}
+
+.layout_sd_user_photo .layout_core_menu_mini > div > ul {
+	 padding: .5em 0px 0px 0px;
+	 float: none;
+	 text-align:center;
+}
+
+.layout_sd_user_photo .layout_core_menu_mini {
+	  padding-right: 0px;
+}
+
+.layout_sd_user_photo .menu_core_mini.core_mini_auth.show_icons {
+    font-size: 12px !important;
+}
+
+.layout_sd_user_photo .updates_pulldown_active .pulldown_contents_wrapper {
+    margin-top: 30px;
+}
+
+.layout_sd_user_photo .updates_pulldown > a.core_mini_update, .layout_sd_user_photo .updates_pulldown_active > a.core_mini_update {
+	 padding:0px;
+}
+
+.layout_sd_user_photo .layout_core_menu_mini #core_menu_mini_menu, .layout_sd_user_photo .layout_core_menu_mini {
+    display: block;
+}
+
+
+/*** Left sidebar mini menu CSS start ****/
+
+
+/**** Images Box CSS start ****/
+
+div#core_menu_topimages_menu img {
+    width: 100%;
+	height: 74px;
+}
+
+div#core_menu_topimages_menu ul li {
+    display: inline-block;
+    margin-right: 1.6px;
+	text-align:center;
+	position: relative;
+	width:7%;
+}
+
+div#core_menu_topimages_menu ul li:last-child {
+	margin-right:0px;
+}
+
+div#core_menu_topimages_menu ul {
+    text-align:left;
+	font-size:0px;
+	margin-bottom:5px;
+}
+
+.topimages_wrapper{
+    background: #FFF;
+}
+
+#core_menu_topimages_menu {
+    padding: 5px 0px 0px;
+	width: 90%;
+    margin: 0 auto;
+}
+
+div#core_menu_topimages_menu ul li .ad_label {
+    text-align: center;
+    font-weight: bold;
+	position: absolute;
+    bottom: 0px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+	font-size:14px;
+}
+
+body .layout_left > .generic_layout_container.layout_sd_user_photo {
+    padding: 15px 2px;
+}
+
+
+
+/**** Images Box CSS End ****/
+
+/*** main menu ****/
+
+body .layout_core_menu_main .navigation > li a:link, body .layout_core_menu_main .navigation > li a:visited {
+    color: #000;
+	padding: 5px 8px;
+	font-size: 13px;
+}
+
+body .layout_core_menu_main .navigation > li {
+	  padding: 0px 0px;
+}
+
+a.menu_core_main.core_main_home:before {
+    content: "";
+    background-image: url('/public/admin/w-star.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+a.menu_core_main.core_main_home, a.menu_core_main.custom_350 {
+    padding: 0px 5px !important;
+}
+
+a.menu_core_main.core_main_home:hover {
+    background: none !important;
+}
+
+.layout_core_menu_main .navigation {
+    border-top: 1px solid #5561ec54;
+    border-bottom: 1px solid #5561ec54;
+}
+
+a.menu_core_main.core_main_home span, a.menu_core_main.custom_350 span {
+    display: none;
+}
+
+
+a.menu_core_main.custom_350:before {
+    content: "";
+    background-image: url('/public/admin/search.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.layout_core_menu_main .navigation li:last-child {
+    float: right;
+}
+
+
+
+/*** main menu end ****/
+
+
+/**** SD TABS FEED CSS ****/
+
+.sd_feed_categories {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 78%;
+    overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/**** SD TABS FEED CSS End ***/
+
+/**** Responsive CSS start here ****/
+@media (max-width: 1199px) {
+	body #core_menu_topimages_menu {
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+/**** Responsive CSS end here ****/
+

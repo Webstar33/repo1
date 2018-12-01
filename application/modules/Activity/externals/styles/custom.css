@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 28, 2017, 6:00:07 PM
+    Author     : Ahmad
+*/
+
+.sd_feed_header .sd_feed_headersection {
+    box-sizing: border-box;    
+}
+.sd_feed_header {
+    overflow: hidden;
+    text-align: center;
+}
+.sd_feed_header .sd_feed_headersection.sd_feed_mostpopular {
+    float: left;
+}
+.sd_feed_header .sd_feed_headersection.sd_feed_options {
+    float: right;
+}
+.sd_feed_header .sd_feed_headersection.sd_feed_worldwide {
+    display: inline-block;
+}
+.layout_sd_feed .activity-post-container {
+    display: none;
+}
+.sd_feed_header_seperator {
+    border-bottom: 2px solid #666;
+    margin-top: 15px;    
+    margin-bottom: 15px;
+}
+.sd_feed_categories {
+    float: left;
+    border: 1px solid #666;
+    padding-right: 4px;
+}
+.sd_feed_categories > li {
+    display: inline-block;
+    margin-right: -4px;
+}
+.sd_feed_categories li {    
+    background: #eee;    
+}
+.sd_feed_categories li:hover {
+    background: #ccc;    
+}
+.sd_feed_categories li ul {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    margin-left: -10px;
+    margin-top: 5px;
+}
+.sd_feed_categories li:hover ul {
+    display: block;
+}
+.sd_feed_categories > li + li{
+    border-left: 1px solid #666;    
+}
+.sd_feed_categories li a {
+    display: block;
+    padding: 5px 10px;
+}
+.sd_post_feed_button {
+    float: right;
+}
+.sd_feed_filters {
+    overflow: hidden;
+}
+#sd_feed_filters .sd_loader {
+    margin-left: -15px;
+    margin-top: 5px;
+}
+.layout_sd_feed #fail_msg {
+    margin-top: 15px;
+}
+.sd_feed_categories li.active {
+    background: #ccc;    
+}
+.sd_feed_mostpopular ul {
+    position: absolute;
+    background: #f4f6f7;
+    box-shadow: 1px 1px 1px #ddd;
+    display: none;
+    z-index: 90;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.sd_feed_mostpopular ul li {
+    padding: 5px 10px;
+}
+.sd_feed_mostpopular:hover ul{
+    display: block;
+}
+.sd_feed_mostpopular ul > li:hover,
+.sd_feed_mostpopular ul > li.active{
+    background: #eee;
+}
+.sd_feed_location_filter {
+    position: absolute;
+    background: #f4f6f7;
+    box-shadow: 1px 1px 1px #ddd;
+    display: none;
+    z-index: 90;
+}
+.sd_feed_worldwide:hover .sd_feed_location_filter{
+    display: block;
+}

@@ -1,0 +1,139 @@
+<?php
+/**
+ * SocialEngine
+ *
+ * @category   Application_Core
+ * @package    Activity
+ * @author     Stars Developer
+ */
+
+class Activity_AdminCategoriesController extends Core_Controller_Action_Admin
+{
+    public function indexAction(){
+        $this->view->id = $parent_id = $this->getParam("id",0);
+        $this->view->table = $table = Engine_Api::_()->getDbtable('categories', 'activity');
+        $select = $table->select()->where("parent_id = ?",$parent_id);
+        $this->view->categories = $table->fetchAll($select);
+        
+        $categoryTable = Engine_Api::_()->getDbtable('categories', 'activity');
+        $this->view->category = $categoryTable->find($parent_id)->current();
+    }
+    
+    public function addAction()
+    {
+      // In smoothbox
+      $this->_helper->layout->setLayout('admin-simple');
+
+      // Generate and assign form
+      $form = $this->view->form = new Activity_Form_Admin_Category_Add();
+      $form->setAction($this->getFrontController()->getRouter()->assemble(array()));
+
+      // Check post
+      if( $this->getRequest()->isPost() && $form->isValid($this->getRequest()->getPost()) ) {
+        // we will add the category
+        $values = $form->getValues();
+
+        $db = Engine_Db_Table::getDefaultAdapter();
+        $db->beginTransaction();
+
+        try {
+          // add category to the database
+          // Transaction
+          $table = Engine_Api::_()->getDbtable('categories', 'activity');
+
+          // insert the category into the database
+          $row = $table->createRow();
+          $row->title = $values["label"];
+          $row->parent_id = $this->getParam("id",0);
+          $row->save();
+
+          $db->commit();
+        } catch( Exception $e ) {
+          $db->rollBack();
+          throw $e;
+        }
+
+        return $this->_forward('success', 'utility', 'core', array(
+            'smoothboxClose' => 1000,
+            'parentRefresh'=> 10,
+            'messages' => array('Your changes have been saved successfully.')
+        ));
+      }
+    }
+
+    public function deleteAction()
+    {
+      // In smoothbox
+      $this->_helper->layout->setLayout('admin-simple');
+      $id = $this->_getParam('id');
+      $this->view->group_id=$id;
+
+      $categoryTable = Engine_Api::_()->getDbtable('categories', 'activity');
+      $category = $categoryTable->find($id)->current();
+
+      // Check post
+      if( $this->getRequest()->isPost() ) {
+        $db = $categoryTable->getAdapter();
+        $db->beginTransaction();
+
+        try {
+            
+            $category->delete();
+
+            $db->commit();
+        } catch( Exception $e ) {
+          $db->rollBack();
+          throw $e;
+        }
+        return $this->_forward('success', 'utility', 'core', array(
+            'smoothboxClose' => 1000,
+            'parentRefresh'=> 10,
+            'messages' => array('Your changes have been saved successfully.')
+        ));
+      }
+      
+    }
+
+    public function editAction()
+    {
+      // In smoothbox
+      $this->_helper->layout->setLayout('admin-simple');
+      $form = $this->view->form = new Activity_Form_Admin_Category_Add();
+      $form->setAction($this->getFrontController()->getRouter()->assemble(array()));
+
+      // Must have an id
+      if( !($id = $this->_getParam('id')) ) {
+        die('No identifier specified');
+      }
+
+      $categoryTable = Engine_Api::_()->getDbtable('categories', 'activity');
+      $category = $categoryTable->find($id)->current();
+      $form->setField($category);
+
+      // Check post
+      if( $this->getRequest()->isPost() && $form->isValid($this->getRequest()->getPost()) ) {
+        // Ok, we're good to add field
+        $values = $form->getValues();
+
+        $db = Engine_Db_Table::getDefaultAdapter();
+        $db->beginTransaction();
+
+        try {
+          $category->title = $values["label"];
+          $category->save();
+
+          $db->commit();
+        } catch( Exception $e ) {
+          $db->rollBack();
+          throw $e;
+        }
+
+        return $this->_forward('success', 'utility', 'core', array(
+            'smoothboxClose' => 1000,
+            'parentRefresh'=> 10,
+            'messages' => array('Your changes have been saved successfully.')
+        ));
+      }
+      
+    }
+}

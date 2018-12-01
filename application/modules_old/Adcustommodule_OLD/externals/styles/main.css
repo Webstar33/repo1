@@ -1,0 +1,26 @@
+
+.ad_green {
+    padding: 5px;
+    background: #008000;
+    border-radius: 100%;
+    position: relative;
+    float: right;
+    margin-top: -15px;
+    border: 3px solid #fff;
+}
+
+.ad_grey {
+    padding: 5px;
+    background: #6b6f6b;
+    border-radius: 100%;
+    position: relative;
+    float: right;
+    margin-top: -15px;
+    border: 3px solid #fff;
+}
+
+
+#activity-feed .feed_item_photo img {
+    border-radius: 100%;
+}
+
